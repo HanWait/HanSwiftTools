@@ -41,5 +41,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>HanTools希望访问您的相册，如果不允许则不能使用图片上传等功能</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>HanTools希望访问您的相册，如果不允许则不能使用图片保存等功能</string>
+	<key>NSCameraUsageDescription</key>
+	<string>HanTools希望访问您的相机，如果不允许则不能使用图片上传等功能</string>
 </dict>
 </plist>

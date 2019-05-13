@@ -7,14 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9119A6E5228914ED0062D305 /* HanTools_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6E4228914ED0062D305 /* HanTools_View.swift */; };
+		9119A6E82289486B0062D305 /* HanTipsHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6E72289486B0062D305 /* HanTipsHUD.swift */; };
+		9119A6EA228949A30062D305 /* HanBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6E9228949A30062D305 /* HanBasicView.swift */; };
+		9119A6ED22894ED60062D305 /* HanTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6EC22894ED60062D305 /* HanTools.swift */; };
+		9119A6EF2289546A0062D305 /* HanTools_Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6EE2289546A0062D305 /* HanTools_Color.swift */; };
+		9119A6F12289640F0062D305 /* HanZoomPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6F02289640F0062D305 /* HanZoomPictureView.swift */; };
+		9119A6F322896D3E0062D305 /* HanTools_Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6F222896D3E0062D305 /* HanTools_Predicate.swift */; };
+		9119A6F522896DC50062D305 /* HanTools_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6F422896DC50062D305 /* HanTools_String.swift */; };
+		9119A6F822896F370062D305 /* HanBase64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6F722896F370062D305 /* HanBase64.swift */; };
+		9119A6FA22896F460062D305 /* HanMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6F922896F460062D305 /* HanMD5.swift */; };
+		9119A6FC22896F650062D305 /* HanRSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6FB22896F650062D305 /* HanRSA.swift */; };
 		9119E27722851F780087653A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119E27622851F780087653A /* AppDelegate.swift */; };
 		9119E27922851F780087653A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119E27822851F780087653A /* ViewController.swift */; };
 		9119E27C22851F780087653A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9119E27A22851F780087653A /* Main.storyboard */; };
 		9119E27E22851F7A0087653A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9119E27D22851F7A0087653A /* Assets.xcassets */; };
 		9119E28122851F7A0087653A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9119E27F22851F7A0087653A /* LaunchScreen.storyboard */; };
+		9119E2AD228521830087653A /* HanBasicDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119E2AC228521830087653A /* HanBasicDefine.swift */; };
+		9119E2B9228560560087653A /* HanImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119E2B8228560560087653A /* HanImagePicker.swift */; };
+		9119E2BB2285612B0087653A /* HanPublicBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119E2BA2285612B0087653A /* HanPublicBlock.swift */; };
+		9119E2BE22856D170087653A /* HanImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119E2BC22856D170087653A /* HanImagePickerVC.swift */; };
+		9119E2BF22856D170087653A /* HanImagePickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9119E2BD22856D170087653A /* HanImagePickerVC.xib */; };
+		9119E2C2228570320087653A /* ExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119E2C0228570320087653A /* ExampleVC.swift */; };
+		9119E2C3228570320087653A /* ExampleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9119E2C1228570320087653A /* ExampleVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9119A6E4228914ED0062D305 /* HanTools_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTools_View.swift; sourceTree = "<group>"; };
+		9119A6E72289486B0062D305 /* HanTipsHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTipsHUD.swift; sourceTree = "<group>"; };
+		9119A6E9228949A30062D305 /* HanBasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanBasicView.swift; sourceTree = "<group>"; };
+		9119A6EC22894ED60062D305 /* HanTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTools.swift; sourceTree = "<group>"; };
+		9119A6EE2289546A0062D305 /* HanTools_Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTools_Color.swift; sourceTree = "<group>"; };
+		9119A6F02289640F0062D305 /* HanZoomPictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanZoomPictureView.swift; sourceTree = "<group>"; };
+		9119A6F222896D3E0062D305 /* HanTools_Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTools_Predicate.swift; sourceTree = "<group>"; };
+		9119A6F422896DC50062D305 /* HanTools_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTools_String.swift; sourceTree = "<group>"; };
+		9119A6F722896F370062D305 /* HanBase64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanBase64.swift; sourceTree = "<group>"; };
+		9119A6F922896F460062D305 /* HanMD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanMD5.swift; sourceTree = "<group>"; };
+		9119A6FB22896F650062D305 /* HanRSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanRSA.swift; sourceTree = "<group>"; };
 		9119E27322851F780087653A /* HanSwiftTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HanSwiftTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9119E27622851F780087653A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9119E27822851F780087653A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +51,13 @@
 		9119E27D22851F7A0087653A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9119E28022851F7A0087653A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9119E28222851F7A0087653A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9119E2AC228521830087653A /* HanBasicDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanBasicDefine.swift; sourceTree = "<group>"; };
+		9119E2B8228560560087653A /* HanImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanImagePicker.swift; sourceTree = "<group>"; };
+		9119E2BA2285612B0087653A /* HanPublicBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanPublicBlock.swift; sourceTree = "<group>"; };
+		9119E2BC22856D170087653A /* HanImagePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanImagePickerVC.swift; sourceTree = "<group>"; };
+		9119E2BD22856D170087653A /* HanImagePickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HanImagePickerVC.xib; sourceTree = "<group>"; };
+		9119E2C0228570320087653A /* ExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleVC.swift; sourceTree = "<group>"; };
+		9119E2C1228570320087653A /* ExampleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +71,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9119A6E32289112B0062D305 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9119A6E4228914ED0062D305 /* HanTools_View.swift */,
+				9119A6EE2289546A0062D305 /* HanTools_Color.swift */,
+				9119A6F222896D3E0062D305 /* HanTools_Predicate.swift */,
+				9119A6F422896DC50062D305 /* HanTools_String.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9119A6E6228946330062D305 /* HanCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				9119A6E9228949A30062D305 /* HanBasicView.swift */,
+				9119A6E72289486B0062D305 /* HanTipsHUD.swift */,
+				9119A6F02289640F0062D305 /* HanZoomPictureView.swift */,
+			);
+			path = HanCustomView;
+			sourceTree = "<group>";
+		};
+		9119A6EB22894EC30062D305 /* HanTools */ = {
+			isa = PBXGroup;
+			children = (
+				9119A6EC22894ED60062D305 /* HanTools.swift */,
+			);
+			path = HanTools;
+			sourceTree = "<group>";
+		};
+		9119A6F622896F240062D305 /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				9119A6F722896F370062D305 /* HanBase64.swift */,
+				9119A6F922896F460062D305 /* HanMD5.swift */,
+				9119A6FB22896F650062D305 /* HanRSA.swift */,
+			);
+			path = Encryption;
+			sourceTree = "<group>";
+		};
 		9119E26A22851F780087653A = {
 			isa = PBXGroup;
 			children = (
@@ -54,7 +129,12 @@
 		9119E27522851F780087653A /* HanSwiftTools */ = {
 			isa = PBXGroup;
 			children = (
+				9119E2AA228521450087653A /* Tools */,
 				9119E27622851F780087653A /* AppDelegate.swift */,
+				9119E2C0228570320087653A /* ExampleVC.swift */,
+				9119E2C1228570320087653A /* ExampleVC.xib */,
+				9119E2BC22856D170087653A /* HanImagePickerVC.swift */,
+				9119E2BD22856D170087653A /* HanImagePickerVC.xib */,
 				9119E27822851F780087653A /* ViewController.swift */,
 				9119E27A22851F780087653A /* Main.storyboard */,
 				9119E27D22851F7A0087653A /* Assets.xcassets */,
@@ -62,6 +142,36 @@
 				9119E28222851F7A0087653A /* Info.plist */,
 			);
 			path = HanSwiftTools;
+			sourceTree = "<group>";
+		};
+		9119E2AA228521450087653A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9119A6F622896F240062D305 /* Encryption */,
+				9119A6EB22894EC30062D305 /* HanTools */,
+				9119A6E6228946330062D305 /* HanCustomView */,
+				9119A6E32289112B0062D305 /* Extension */,
+				9119E2B722855FB30087653A /* CustomSystemControls */,
+				9119E2AB228521520087653A /* BasicDefine */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		9119E2AB228521520087653A /* BasicDefine */ = {
+			isa = PBXGroup;
+			children = (
+				9119E2AC228521830087653A /* HanBasicDefine.swift */,
+				9119E2BA2285612B0087653A /* HanPublicBlock.swift */,
+			);
+			path = BasicDefine;
+			sourceTree = "<group>";
+		};
+		9119E2B722855FB30087653A /* CustomSystemControls */ = {
+			isa = PBXGroup;
+			children = (
+				9119E2B8228560560087653A /* HanImagePicker.swift */,
+			);
+			path = CustomSystemControls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +234,8 @@
 			files = (
 				9119E28122851F7A0087653A /* LaunchScreen.storyboard in Resources */,
 				9119E27E22851F7A0087653A /* Assets.xcassets in Resources */,
+				9119E2C3228570320087653A /* ExampleVC.xib in Resources */,
+				9119E2BF22856D170087653A /* HanImagePickerVC.xib in Resources */,
 				9119E27C22851F780087653A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +247,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9119A6E5228914ED0062D305 /* HanTools_View.swift in Sources */,
+				9119A6F322896D3E0062D305 /* HanTools_Predicate.swift in Sources */,
+				9119A6EF2289546A0062D305 /* HanTools_Color.swift in Sources */,
+				9119E2BE22856D170087653A /* HanImagePickerVC.swift in Sources */,
+				9119E2AD228521830087653A /* HanBasicDefine.swift in Sources */,
 				9119E27922851F780087653A /* ViewController.swift in Sources */,
+				9119A6FC22896F650062D305 /* HanRSA.swift in Sources */,
+				9119A6FA22896F460062D305 /* HanMD5.swift in Sources */,
+				9119A6F822896F370062D305 /* HanBase64.swift in Sources */,
+				9119E2BB2285612B0087653A /* HanPublicBlock.swift in Sources */,
+				9119E2C2228570320087653A /* ExampleVC.swift in Sources */,
+				9119A6F12289640F0062D305 /* HanZoomPictureView.swift in Sources */,
 				9119E27722851F780087653A /* AppDelegate.swift in Sources */,
+				9119E2B9228560560087653A /* HanImagePicker.swift in Sources */,
+				9119A6F522896DC50062D305 /* HanTools_String.swift in Sources */,
+				9119A6ED22894ED60062D305 /* HanTools.swift in Sources */,
+				9119A6E82289486B0062D305 /* HanTipsHUD.swift in Sources */,
+				9119A6EA228949A30062D305 /* HanBasicView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +411,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 547K83BTCD;
 				INFOPLIST_FILE = HanSwiftTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +430,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 547K83BTCD;
 				INFOPLIST_FILE = HanSwiftTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

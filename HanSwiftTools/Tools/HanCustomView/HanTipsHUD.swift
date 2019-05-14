@@ -96,7 +96,6 @@ class HanTipsHUD: NSObject {
         for view in (UIApplication.shared.keyWindow?.subviews)!{
             if  view.tag == 1008611  {
                 view.removeFromSuperview()
-                HanTipsHUD.shared = nil
             }
             
         }

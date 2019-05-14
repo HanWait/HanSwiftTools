@@ -47,5 +47,10 @@
 	<string>HanTools希望访问您的相册，如果不允许则不能使用图片保存等功能</string>
 	<key>NSCameraUsageDescription</key>
 	<string>HanTools希望访问您的相机，如果不允许则不能使用图片上传等功能</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

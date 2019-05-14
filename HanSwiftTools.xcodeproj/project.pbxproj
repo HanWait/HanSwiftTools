@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9119A6E5228914ED0062D305 /* HanTools_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6E4228914ED0062D305 /* HanTools_View.swift */; };
+		9119A6E5228914ED0062D305 /* HanTools_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6E4228914ED0062D305 /* HanTools_UIView.swift */; };
 		9119A6E82289486B0062D305 /* HanTipsHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6E72289486B0062D305 /* HanTipsHUD.swift */; };
 		9119A6EA228949A30062D305 /* HanBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6E9228949A30062D305 /* HanBasicView.swift */; };
 		9119A6ED22894ED60062D305 /* HanTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6EC22894ED60062D305 /* HanTools.swift */; };
-		9119A6EF2289546A0062D305 /* HanTools_Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6EE2289546A0062D305 /* HanTools_Color.swift */; };
+		9119A6EF2289546A0062D305 /* HanTools_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6EE2289546A0062D305 /* HanTools_UIColor.swift */; };
 		9119A6F12289640F0062D305 /* HanZoomPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6F02289640F0062D305 /* HanZoomPictureView.swift */; };
 		9119A6F322896D3E0062D305 /* HanTools_Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6F222896D3E0062D305 /* HanTools_Predicate.swift */; };
 		9119A6F522896DC50062D305 /* HanTools_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6F422896DC50062D305 /* HanTools_String.swift */; };
 		9119A6F822896F370062D305 /* HanBase64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6F722896F370062D305 /* HanBase64.swift */; };
 		9119A6FA22896F460062D305 /* HanMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6F922896F460062D305 /* HanMD5.swift */; };
 		9119A6FC22896F650062D305 /* HanRSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6FB22896F650062D305 /* HanRSA.swift */; };
+		9119A6FF228977520062D305 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 9119A6FE228977520062D305 /* placeholder.png */; };
 		9119E27722851F780087653A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119E27622851F780087653A /* AppDelegate.swift */; };
 		9119E27922851F780087653A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119E27822851F780087653A /* ViewController.swift */; };
 		9119E27C22851F780087653A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9119E27A22851F780087653A /* Main.storyboard */; };
@@ -30,20 +31,35 @@
 		9119E2BF22856D170087653A /* HanImagePickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9119E2BD22856D170087653A /* HanImagePickerVC.xib */; };
 		9119E2C2228570320087653A /* ExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119E2C0228570320087653A /* ExampleVC.swift */; };
 		9119E2C3228570320087653A /* ExampleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9119E2C1228570320087653A /* ExampleVC.xib */; };
+		914251B9228A54870010FD8B /* HanZoomPictureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914251B7228A54870010FD8B /* HanZoomPictureVC.swift */; };
+		914251BA228A54870010FD8B /* HanZoomPictureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914251B8228A54870010FD8B /* HanZoomPictureVC.xib */; };
+		914251BC228A5B200010FD8B /* HanZoom.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 914251BB228A5B200010FD8B /* HanZoom.jpeg */; };
+		914251BE228A6DE30010FD8B /* HanTools_UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914251BD228A6DE30010FD8B /* HanTools_UIImage.swift */; };
+		914251C1228A6EC30010FD8B /* HanZoomPicturesScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914251C0228A6EC30010FD8B /* HanZoomPicturesScrollView.swift */; };
+		914251C3228A6F0B0010FD8B /* HanZoomPicturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914251C2228A6F0B0010FD8B /* HanZoomPicturesView.swift */; };
+		914251C5228A6F8D0010FD8B /* HanZoomPicturesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914251C4228A6F8D0010FD8B /* HanZoomPicturesVC.swift */; };
+		914251CE228A70430010FD8B /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 914251C7228A70430010FD8B /* 4.png */; };
+		914251CF228A70430010FD8B /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 914251C8228A70430010FD8B /* 5.png */; };
+		914251D0228A70430010FD8B /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 914251C9228A70430010FD8B /* 7.png */; };
+		914251D1228A70430010FD8B /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 914251CA228A70430010FD8B /* 6.png */; };
+		914251D2228A70430010FD8B /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 914251CB228A70430010FD8B /* 2.png */; };
+		914251D3228A70430010FD8B /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 914251CC228A70430010FD8B /* 3.png */; };
+		914251D4228A70430010FD8B /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 914251CD228A70430010FD8B /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9119A6E4228914ED0062D305 /* HanTools_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTools_View.swift; sourceTree = "<group>"; };
+		9119A6E4228914ED0062D305 /* HanTools_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTools_UIView.swift; sourceTree = "<group>"; };
 		9119A6E72289486B0062D305 /* HanTipsHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTipsHUD.swift; sourceTree = "<group>"; };
 		9119A6E9228949A30062D305 /* HanBasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanBasicView.swift; sourceTree = "<group>"; };
 		9119A6EC22894ED60062D305 /* HanTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTools.swift; sourceTree = "<group>"; };
-		9119A6EE2289546A0062D305 /* HanTools_Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTools_Color.swift; sourceTree = "<group>"; };
+		9119A6EE2289546A0062D305 /* HanTools_UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTools_UIColor.swift; sourceTree = "<group>"; };
 		9119A6F02289640F0062D305 /* HanZoomPictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanZoomPictureView.swift; sourceTree = "<group>"; };
 		9119A6F222896D3E0062D305 /* HanTools_Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTools_Predicate.swift; sourceTree = "<group>"; };
 		9119A6F422896DC50062D305 /* HanTools_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTools_String.swift; sourceTree = "<group>"; };
 		9119A6F722896F370062D305 /* HanBase64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanBase64.swift; sourceTree = "<group>"; };
 		9119A6F922896F460062D305 /* HanMD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanMD5.swift; sourceTree = "<group>"; };
 		9119A6FB22896F650062D305 /* HanRSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanRSA.swift; sourceTree = "<group>"; };
+		9119A6FE228977520062D305 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		9119E27322851F780087653A /* HanSwiftTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HanSwiftTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9119E27622851F780087653A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9119E27822851F780087653A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +74,20 @@
 		9119E2BD22856D170087653A /* HanImagePickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HanImagePickerVC.xib; sourceTree = "<group>"; };
 		9119E2C0228570320087653A /* ExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleVC.swift; sourceTree = "<group>"; };
 		9119E2C1228570320087653A /* ExampleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleVC.xib; sourceTree = "<group>"; };
+		914251B7228A54870010FD8B /* HanZoomPictureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanZoomPictureVC.swift; sourceTree = "<group>"; };
+		914251B8228A54870010FD8B /* HanZoomPictureVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HanZoomPictureVC.xib; sourceTree = "<group>"; };
+		914251BB228A5B200010FD8B /* HanZoom.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HanZoom.jpeg; sourceTree = "<group>"; };
+		914251BD228A6DE30010FD8B /* HanTools_UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTools_UIImage.swift; sourceTree = "<group>"; };
+		914251C0228A6EC30010FD8B /* HanZoomPicturesScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanZoomPicturesScrollView.swift; sourceTree = "<group>"; };
+		914251C2228A6F0B0010FD8B /* HanZoomPicturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanZoomPicturesView.swift; sourceTree = "<group>"; };
+		914251C4228A6F8D0010FD8B /* HanZoomPicturesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanZoomPicturesVC.swift; sourceTree = "<group>"; };
+		914251C7228A70430010FD8B /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		914251C8228A70430010FD8B /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		914251C9228A70430010FD8B /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		914251CA228A70430010FD8B /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		914251CB228A70430010FD8B /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		914251CC228A70430010FD8B /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		914251CD228A70430010FD8B /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +104,10 @@
 		9119A6E32289112B0062D305 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				9119A6E4228914ED0062D305 /* HanTools_View.swift */,
-				9119A6EE2289546A0062D305 /* HanTools_Color.swift */,
-				9119A6F222896D3E0062D305 /* HanTools_Predicate.swift */,
+				9119A6E4228914ED0062D305 /* HanTools_UIView.swift */,
+				9119A6EE2289546A0062D305 /* HanTools_UIColor.swift */,
 				9119A6F422896DC50062D305 /* HanTools_String.swift */,
+				914251BD228A6DE30010FD8B /* HanTools_UIImage.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -85,6 +115,7 @@
 		9119A6E6228946330062D305 /* HanCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				914251BF228A6E800010FD8B /* HanZoomPicturesView */,
 				9119A6E9228949A30062D305 /* HanBasicView.swift */,
 				9119A6E72289486B0062D305 /* HanTipsHUD.swift */,
 				9119A6F02289640F0062D305 /* HanZoomPictureView.swift */,
@@ -96,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				9119A6EC22894ED60062D305 /* HanTools.swift */,
+				9119A6F222896D3E0062D305 /* HanTools_Predicate.swift */,
 			);
 			path = HanTools;
 			sourceTree = "<group>";
@@ -108,6 +140,24 @@
 				9119A6FB22896F650062D305 /* HanRSA.swift */,
 			);
 			path = Encryption;
+			sourceTree = "<group>";
+		};
+		9119A6FD2289773A0062D305 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9119A700228977580062D305 /* Image */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9119A700228977580062D305 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				914251C6228A70430010FD8B /* HanZoomPictures */,
+				9119A6FE228977520062D305 /* placeholder.png */,
+				914251BB228A5B200010FD8B /* HanZoom.jpeg */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		9119E26A22851F780087653A = {
@@ -129,12 +179,12 @@
 		9119E27522851F780087653A /* HanSwiftTools */ = {
 			isa = PBXGroup;
 			children = (
+				914251B6228A53E40010FD8B /* Items */,
+				9119A6FD2289773A0062D305 /* Resource */,
 				9119E2AA228521450087653A /* Tools */,
 				9119E27622851F780087653A /* AppDelegate.swift */,
 				9119E2C0228570320087653A /* ExampleVC.swift */,
 				9119E2C1228570320087653A /* ExampleVC.xib */,
-				9119E2BC22856D170087653A /* HanImagePickerVC.swift */,
-				9119E2BD22856D170087653A /* HanImagePickerVC.xib */,
 				9119E27822851F780087653A /* ViewController.swift */,
 				9119E27A22851F780087653A /* Main.storyboard */,
 				9119E27D22851F7A0087653A /* Assets.xcassets */,
@@ -172,6 +222,41 @@
 				9119E2B8228560560087653A /* HanImagePicker.swift */,
 			);
 			path = CustomSystemControls;
+			sourceTree = "<group>";
+		};
+		914251B6228A53E40010FD8B /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				9119E2BC22856D170087653A /* HanImagePickerVC.swift */,
+				9119E2BD22856D170087653A /* HanImagePickerVC.xib */,
+				914251B7228A54870010FD8B /* HanZoomPictureVC.swift */,
+				914251B8228A54870010FD8B /* HanZoomPictureVC.xib */,
+				914251C4228A6F8D0010FD8B /* HanZoomPicturesVC.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		914251BF228A6E800010FD8B /* HanZoomPicturesView */ = {
+			isa = PBXGroup;
+			children = (
+				914251C0228A6EC30010FD8B /* HanZoomPicturesScrollView.swift */,
+				914251C2228A6F0B0010FD8B /* HanZoomPicturesView.swift */,
+			);
+			path = HanZoomPicturesView;
+			sourceTree = "<group>";
+		};
+		914251C6228A70430010FD8B /* HanZoomPictures */ = {
+			isa = PBXGroup;
+			children = (
+				914251C7228A70430010FD8B /* 4.png */,
+				914251C8228A70430010FD8B /* 5.png */,
+				914251C9228A70430010FD8B /* 7.png */,
+				914251CA228A70430010FD8B /* 6.png */,
+				914251CB228A70430010FD8B /* 2.png */,
+				914251CC228A70430010FD8B /* 3.png */,
+				914251CD228A70430010FD8B /* 1.png */,
+			);
+			path = HanZoomPictures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,10 +317,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914251D2228A70430010FD8B /* 2.png in Resources */,
+				914251D0228A70430010FD8B /* 7.png in Resources */,
+				914251CE228A70430010FD8B /* 4.png in Resources */,
+				914251CF228A70430010FD8B /* 5.png in Resources */,
 				9119E28122851F7A0087653A /* LaunchScreen.storyboard in Resources */,
+				914251D3228A70430010FD8B /* 3.png in Resources */,
+				9119A6FF228977520062D305 /* placeholder.png in Resources */,
 				9119E27E22851F7A0087653A /* Assets.xcassets in Resources */,
+				914251D1228A70430010FD8B /* 6.png in Resources */,
+				914251D4228A70430010FD8B /* 1.png in Resources */,
 				9119E2C3228570320087653A /* ExampleVC.xib in Resources */,
+				914251BC228A5B200010FD8B /* HanZoom.jpeg in Resources */,
 				9119E2BF22856D170087653A /* HanImagePickerVC.xib in Resources */,
+				914251BA228A54870010FD8B /* HanZoomPictureVC.xib in Resources */,
 				9119E27C22851F780087653A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,10 +342,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9119A6E5228914ED0062D305 /* HanTools_View.swift in Sources */,
+				9119A6E5228914ED0062D305 /* HanTools_UIView.swift in Sources */,
 				9119A6F322896D3E0062D305 /* HanTools_Predicate.swift in Sources */,
-				9119A6EF2289546A0062D305 /* HanTools_Color.swift in Sources */,
+				9119A6EF2289546A0062D305 /* HanTools_UIColor.swift in Sources */,
+				914251B9228A54870010FD8B /* HanZoomPictureVC.swift in Sources */,
+				914251C5228A6F8D0010FD8B /* HanZoomPicturesVC.swift in Sources */,
 				9119E2BE22856D170087653A /* HanImagePickerVC.swift in Sources */,
+				914251BE228A6DE30010FD8B /* HanTools_UIImage.swift in Sources */,
+				914251C3228A6F0B0010FD8B /* HanZoomPicturesView.swift in Sources */,
 				9119E2AD228521830087653A /* HanBasicDefine.swift in Sources */,
 				9119E27922851F780087653A /* ViewController.swift in Sources */,
 				9119A6FC22896F650062D305 /* HanRSA.swift in Sources */,
@@ -261,6 +360,7 @@
 				9119A6F12289640F0062D305 /* HanZoomPictureView.swift in Sources */,
 				9119E27722851F780087653A /* AppDelegate.swift in Sources */,
 				9119E2B9228560560087653A /* HanImagePicker.swift in Sources */,
+				914251C1228A6EC30010FD8B /* HanZoomPicturesScrollView.swift in Sources */,
 				9119A6F522896DC50062D305 /* HanTools_String.swift in Sources */,
 				9119A6ED22894ED60062D305 /* HanTools.swift in Sources */,
 				9119A6E82289486B0062D305 /* HanTipsHUD.swift in Sources */,

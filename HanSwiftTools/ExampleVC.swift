@@ -21,11 +21,7 @@ class ExampleVC: UIViewController {
         }
         
         self.title  = "事例"
-        dataArray = ["相机/相册"]
-        
-        
-        
-        print(self.view.width)
+        dataArray = ["相机/相册","单图放缩","多图放缩"]
         
     }
     
@@ -58,6 +54,14 @@ extension ExampleVC:UITableViewDelegate,UITableViewDataSource{
         case "相机/相册":
             vc = HanImagePickerVC()
             vc.title = "相机/相册"
+            break
+        case "单图放缩":
+            vc = HanZoomPictureVC()
+            vc.title = "单图放缩"
+            break
+        case "多图放缩":
+            vc = HanZoomPicturesVC()
+            vc.title = "多图放缩"
             break
         default:
             break

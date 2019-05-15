@@ -32,6 +32,8 @@ class HanImagePicker: NSObject {
     /// 照片
     private var photograph: UIImage?
     
+    /// 保存图片是否成功
+    private var saveError:HanErrorBlock?
     /// 加载手机相机相册
     ///
     /// - Parameters:
@@ -88,7 +90,8 @@ class HanImagePicker: NSObject {
     /// 保存传入的图片
     ///
     /// - Parameter image: 图片
-    public func saveImage(image:UIImage?){
+    public func saveImage(image:UIImage?,error:HanErrorBlock?){
+        self.saveError = error
         if image == nil {
             HanTipsHUD.shared?.show(text: "图片为空", position: .middle)
         }else{
@@ -107,10 +110,8 @@ class HanImagePicker: NSObject {
         
     }
     @objc private func saveImage(image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: AnyObject) {
-        if error != nil{
-            HanTipsHUD.shared?.show(text: "保存失败", position: .middle)
-        }else{
-            HanTipsHUD.shared?.show(text: "保存成功", position: .middle)
+        if self.saveError != nil{
+            self.saveError!(error)
         }
     }
     

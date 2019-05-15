@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91181D81228C0CD0002A8C09 /* HanProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91181D80228C0CD0002A8C09 /* HanProgressView.swift */; };
 		9119A6E5228914ED0062D305 /* HanTools_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6E4228914ED0062D305 /* HanTools_UIView.swift */; };
 		9119A6E82289486B0062D305 /* HanTipsHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6E72289486B0062D305 /* HanTipsHUD.swift */; };
 		9119A6EA228949A30062D305 /* HanBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6E9228949A30062D305 /* HanBasicView.swift */; };
@@ -45,9 +46,12 @@
 		914251D2228A70430010FD8B /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 914251CB228A70430010FD8B /* 2.png */; };
 		914251D3228A70430010FD8B /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 914251CC228A70430010FD8B /* 3.png */; };
 		914251D4228A70430010FD8B /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 914251CD228A70430010FD8B /* 1.png */; };
+		914251DC228A96740010FD8B /* HanProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914251DA228A96740010FD8B /* HanProgressVC.swift */; };
+		914251DD228A96740010FD8B /* HanProgressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914251DB228A96740010FD8B /* HanProgressVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91181D80228C0CD0002A8C09 /* HanProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanProgressView.swift; sourceTree = "<group>"; };
 		9119A6E4228914ED0062D305 /* HanTools_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTools_UIView.swift; sourceTree = "<group>"; };
 		9119A6E72289486B0062D305 /* HanTipsHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTipsHUD.swift; sourceTree = "<group>"; };
 		9119A6E9228949A30062D305 /* HanBasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanBasicView.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 		914251CB228A70430010FD8B /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		914251CC228A70430010FD8B /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		914251CD228A70430010FD8B /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		914251DA228A96740010FD8B /* HanProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanProgressVC.swift; sourceTree = "<group>"; };
+		914251DB228A96740010FD8B /* HanProgressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HanProgressVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 				9119A6E9228949A30062D305 /* HanBasicView.swift */,
 				9119A6E72289486B0062D305 /* HanTipsHUD.swift */,
 				9119A6F02289640F0062D305 /* HanZoomPictureView.swift */,
+				91181D80228C0CD0002A8C09 /* HanProgressView.swift */,
 			);
 			path = HanCustomView;
 			sourceTree = "<group>";
@@ -232,6 +239,8 @@
 				914251B7228A54870010FD8B /* HanZoomPictureVC.swift */,
 				914251B8228A54870010FD8B /* HanZoomPictureVC.xib */,
 				914251C4228A6F8D0010FD8B /* HanZoomPicturesVC.swift */,
+				914251DA228A96740010FD8B /* HanProgressVC.swift */,
+				914251DB228A96740010FD8B /* HanProgressVC.xib */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -324,6 +333,7 @@
 				9119E28122851F7A0087653A /* LaunchScreen.storyboard in Resources */,
 				914251D3228A70430010FD8B /* 3.png in Resources */,
 				9119A6FF228977520062D305 /* placeholder.png in Resources */,
+				914251DD228A96740010FD8B /* HanProgressVC.xib in Resources */,
 				9119E27E22851F7A0087653A /* Assets.xcassets in Resources */,
 				914251D1228A70430010FD8B /* 6.png in Resources */,
 				914251D4228A70430010FD8B /* 1.png in Resources */,
@@ -347,6 +357,7 @@
 				9119A6EF2289546A0062D305 /* HanTools_UIColor.swift in Sources */,
 				914251B9228A54870010FD8B /* HanZoomPictureVC.swift in Sources */,
 				914251C5228A6F8D0010FD8B /* HanZoomPicturesVC.swift in Sources */,
+				914251DC228A96740010FD8B /* HanProgressVC.swift in Sources */,
 				9119E2BE22856D170087653A /* HanImagePickerVC.swift in Sources */,
 				914251BE228A6DE30010FD8B /* HanTools_UIImage.swift in Sources */,
 				914251C3228A6F0B0010FD8B /* HanZoomPicturesView.swift in Sources */,
@@ -358,6 +369,7 @@
 				9119E2BB2285612B0087653A /* HanPublicBlock.swift in Sources */,
 				9119E2C2228570320087653A /* ExampleVC.swift in Sources */,
 				9119A6F12289640F0062D305 /* HanZoomPictureView.swift in Sources */,
+				91181D81228C0CD0002A8C09 /* HanProgressView.swift in Sources */,
 				9119E27722851F780087653A /* AppDelegate.swift in Sources */,
 				9119E2B9228560560087653A /* HanImagePicker.swift in Sources */,
 				914251C1228A6EC30010FD8B /* HanZoomPicturesScrollView.swift in Sources */,
@@ -521,7 +533,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hk.hqPay.HanSwiftTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -540,7 +552,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hk.hqPay.HanSwiftTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

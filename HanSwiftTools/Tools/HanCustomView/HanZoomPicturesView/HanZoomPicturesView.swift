@@ -5,6 +5,8 @@
 //  Created by Han on 2019/5/14.
 //  Copyright © 2019 Han. All rights reserved.
 //
+//  多图片放缩
+//
 
 import UIKit
 

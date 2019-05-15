@@ -12,5 +12,7 @@
 import UIKit
 
 /// 带图片的block
-typealias HanImageBlock = (_ image:UIImage) -> Void
+typealias HanImageBlock = (_ image:UIImage?) -> Void
 
+/// 带error的block
+typealias HanErrorBlock = (_ error: NSError?) -> Void

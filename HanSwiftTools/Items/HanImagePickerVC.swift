@@ -33,7 +33,14 @@ class HanImagePickerVC: UIViewController {
     
     /// 保存点击事件  保存图片
     @IBAction func savePhotoBtnClicked(_ sender: Any) {
-        hanImagePicker.saveImage(image: self.hanIPImageView.image)
+//        hanImagePicker.saveImage(image: self.hanIPImageView.image,error:)
+        hanImagePicker.saveImage(image: self.hanIPImageView.image) { (error) in
+            if error != nil{
+                HanTipsHUD.shared?.show(text: "保存失败", position: .middle)
+            }else{
+                HanTipsHUD.shared?.show(text: "保存成功", position: .middle)
+            }
+        }
     }
     
     /// 图片点击事件  放大图片

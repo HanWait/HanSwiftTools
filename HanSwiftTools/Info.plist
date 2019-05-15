@@ -20,6 +20,17 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>HanTools希望访问您的相机，如果不允许则不能使用图片上传等功能</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>HanTools希望访问您的相册，如果不允许则不能使用图片保存等功能</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>HanTools希望访问您的相册，如果不允许则不能使用图片上传等功能</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -31,8 +42,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -41,16 +50,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>HanTools希望访问您的相册，如果不允许则不能使用图片上传等功能</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>HanTools希望访问您的相册，如果不允许则不能使用图片保存等功能</string>
-	<key>NSCameraUsageDescription</key>
-	<string>HanTools希望访问您的相机，如果不允许则不能使用图片上传等功能</string>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 </dict>
 </plist>

@@ -21,7 +21,10 @@ class ExampleVC: UIViewController {
         }
         
         self.title  = "事例"
-        dataArray = ["相机/相册","单图放缩","多图放缩"]
+        dataArray = ["相机/相册",
+                     "单图放缩",
+                     "多图放缩",
+                     "进度条"]
         
     }
     
@@ -62,6 +65,10 @@ extension ExampleVC:UITableViewDelegate,UITableViewDataSource{
         case "多图放缩":
             vc = HanZoomPicturesVC()
             vc.title = "多图放缩"
+            break
+        case "进度条":
+            vc = HanProgressVC()
+            vc.title = "进度条"
             break
         default:
             break

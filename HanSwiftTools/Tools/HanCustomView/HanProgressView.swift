@@ -22,7 +22,12 @@ class HanProgressView: UIView {
     /// 进度条
     private var lineLayer:CAGradientLayer?
     
-    var type: HantProgressType?{
+    /// 圆形进度条
+    private var circleLayer:CAShapeLayer?
+    
+    /// 圆形进度条 线宽
+    var circleLineWidth:CGFloat = 5.0
+    var type: HantProgressType? = .straight{
         didSet{
             self.updateView()
         }
@@ -53,23 +58,32 @@ class HanProgressView: UIView {
     /// 移动进度条 默认0.5
     var moveProgress:CGFloat = 0.5{
         didSet{
-            let count = moveProgress
-            self.progress = 0.0
             
-            if #available(iOS 10.0, *) {
-                let timer:Timer? = Timer(timeInterval: 0.1, repeats: true) { ( tim) in
-                    if self.progress >= count{
-                        tim.invalidate()
-                        return
+            if self.type == .straight || self.type == .straightGradient{
+                let count = moveProgress
+                self.progress = 0.0
+                
+                if #available(iOS 10.0, *) {
+                    let timer:Timer? = Timer(timeInterval: 0.1, repeats: true) { ( tim) in
+                        if self.progress >= count{
+                            tim.invalidate()
+                            return
+                        }
+                        self.progress = self.progress + 0.1
+                        
                     }
-                    self.progress = self.progress + 0.1
+                    RunLoop.current.add(timer!, forMode: .default)
+                } else {
+                    // Fallback on earlier versions
                     
                 }
-                RunLoop.current.add(timer!, forMode: .default)
-            } else {
-                // Fallback on earlier versions
+            }else{
+                self.progress = 0
+                self.updateView()
+                self.circleLayerAnimation()
                 
             }
+            
             
             
         }
@@ -82,7 +96,7 @@ class HanProgressView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.addSubView()
+        self.addSubLayer()
         self.updateView()
     }
     
@@ -92,7 +106,7 @@ class HanProgressView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.addSubView()
+        self.addSubLayer()
         self.updateView()
     }
     
@@ -101,8 +115,29 @@ class HanProgressView: UIView {
     }
     
     
-    private func addSubView(){
+    private func addSubLayer(){
+        
+        self.createBGLayer()
+        
+        if self.type == .straight || self.type == .straightGradient{
+            self.createGradientLayer()
+        }else{
+            self.createShapeLayer()
+        }
+        
+    }
+    
+    
+    
+    private func createBGLayer(){
         if self.bgLayer == nil{
+            
+            
+            if self.bgProgressColor == UIColor.clear{
+                self.backgroundColor = self.bgProgressColor
+                return
+            }
+            
             
             let maskLayer = CALayer()
             maskLayer.bounds = CGRect.init(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height)
@@ -118,8 +153,10 @@ class HanProgressView: UIView {
             self.bgLayer?.cornerRadius = self.frame.size.height/2.0
             self.layer.addSublayer(self.bgLayer!)
         }
-        
-        
+    }
+    
+    
+    private func createGradientLayer(){
         if self.lineLayer == nil{
             lineLayer = CAGradientLayer()
             lineLayer?.bounds = CGRect.init(x: 0, y: 0, width: self.frame.size.width * self.progress, height: self.frame.size.height)
@@ -131,17 +168,57 @@ class HanProgressView: UIView {
         }
     }
     
+    private func createShapeLayer(){
+        if self.circleLayer == nil{
+
+            self.backgroundColor = UIColor.clear
+            circleLayer = CAShapeLayer()
+            circleLayer?.frame = CGRect.init(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height)
+            circleLayer?.backgroundColor = UIColor.clear.cgColor
+            let path = UIBezierPath.init(arcCenter: CGPoint.init(x: self.width * 0.5, y: self.height * 0.5), radius: (self.frame.size.width - self.circleLineWidth)/2, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: true)
+            circleLayer?.path = path.cgPath
+            circleLayer?.lineWidth = self.circleLineWidth
+            circleLayer?.backgroundColor = UIColor.clear.cgColor
+            circleLayer?.fillColor = UIColor.clear.cgColor
+            circleLayer?.strokeColor = self.colorArray.first
+            circleLayer?.lineCap = .round
+            circleLayer?.lineJoin = .round
+            circleLayer?.strokeStart = 0.0
+            circleLayer?.strokeEnd = self.progress
+            self.layer.addSublayer(circleLayer!)
+            
+            
+        }
+    }
+    
+    private func circleLayerAnimation(){
+        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        animation.fromValue = CGFloat(0.0)
+        animation.toValue = self.moveProgress
+        animation.duration = 1.0
+        animation.isRemovedOnCompletion = false
+        animation.isAdditive = true
+        animation.fillMode = CAMediaTimingFillMode.forwards
+        circleLayer?.add(animation, forKey: "strokeEnd")
+        
+    }
+    
     private func updateView(){
-        self.lineLayer?.bounds = CGRect.init(x: 0, y: 0, width: self.frame.size.width * self.progress, height: self.frame.size.height)
+        
         switch self.type {
         case .straight?:
+            self.lineLayer?.bounds = CGRect.init(x: 0, y: 0, width: self.frame.size.width * self.progress, height: self.frame.size.height)
             self.lineLayer?.backgroundColor = self.colorArray.first
+            self.bgLayer?.backgroundColor = self.bgProgressColor.cgColor
             break
         case .straightGradient?:
+            self.lineLayer?.bounds = CGRect.init(x: 0, y: 0, width: self.frame.size.width * self.progress, height: self.frame.size.height)
             self.lineLayer?.colors = self.colorArray
+            self.bgLayer?.backgroundColor = self.bgProgressColor.cgColor
             break
         case .circle?:
-            self.lineLayer?.colors = self.colorArray
+            circleLayer?.strokeEnd = self.progress
+            circleLayer?.strokeColor = self.colorArray.first
             break
         case .circleGradient?:
             self.lineLayer?.colors = self.colorArray
@@ -150,7 +227,7 @@ class HanProgressView: UIView {
             self.lineLayer?.backgroundColor = self.colorArray.first
             break
         }
-        self.bgLayer?.backgroundColor = self.bgProgressColor.cgColor
+        
     }
     
     

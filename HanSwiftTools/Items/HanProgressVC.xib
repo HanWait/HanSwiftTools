@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HanProgressVC" customModule="HanSwiftTools" customModuleProvider="target">
             <connections>
+                <outlet property="hanPCircleMoveProgressView" destination="tZd-P6-QEp" id="iM2-Hc-LDL"/>
+                <outlet property="hanPCircleProgressView" destination="Odb-kT-1hv" id="dJx-2d-JsV"/>
                 <outlet property="hanPStraightColorsProgressView" destination="WVH-Es-pif" id="kMV-YN-xly"/>
                 <outlet property="hanPStraightMoveColorsProgressView" destination="LFt-1x-76n" id="KMo-04-Tba"/>
                 <outlet property="hanPStraightMoveProgressView" destination="3qM-Mr-SEa" id="vgC-CA-XQg"/>
@@ -105,17 +107,6 @@
                         <constraint firstItem="WVH-Es-pif" firstAttribute="top" secondItem="9Iu-Lp-x1t" secondAttribute="bottom" constant="10" id="yZl-Iu-BYG"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qh-Eb-8Lt">
-                    <rect key="frame" x="30" y="617" width="315" height="40"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.18823529410000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="BaR-3N-x1L"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                    <connections>
-                        <action selector="addBtnClicked:" destination="-1" eventType="touchUpInside" id="CPu-p3-Jqz"/>
-                    </connections>
-                </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wq-HY-Vqx" userLabel="View4">
                     <rect key="frame" x="0.0" y="180" width="375" height="50"/>
                     <subviews>
@@ -143,12 +134,94 @@
                         <constraint firstItem="uWk-fO-cSt" firstAttribute="top" secondItem="3wq-HY-Vqx" secondAttribute="top" id="pxf-j9-zEc"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y3G-fB-sUq" userLabel="View5">
+                    <rect key="frame" x="30" y="230" width="130" height="130"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Odb-kT-1hv" customClass="HanProgressView" customModule="HanSwiftTools" customModuleProvider="target">
+                            <rect key="frame" x="15" y="30" width="100" height="100"/>
+                            <color key="backgroundColor" red="0.54901960780000003" green="0.87843137250000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="alc-5p-Ics"/>
+                                <constraint firstAttribute="width" constant="100" id="yYu-m9-scq"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普通单色圆形进度条" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXy-py-6qz">
+                            <rect key="frame" x="0.0" y="0.0" width="130" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="ugY-VD-6Mk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="1SZ-Uz-7Ty"/>
+                        <constraint firstItem="sXy-py-6qz" firstAttribute="top" secondItem="Y3G-fB-sUq" secondAttribute="top" id="BlF-gS-glJ"/>
+                        <constraint firstAttribute="bottom" secondItem="Odb-kT-1hv" secondAttribute="bottom" id="LIb-yV-Jfx"/>
+                        <constraint firstAttribute="height" constant="130" id="TJw-Mh-LaQ"/>
+                        <constraint firstAttribute="trailing" secondItem="Odb-kT-1hv" secondAttribute="trailing" constant="15" id="Tug-km-8R5"/>
+                        <constraint firstItem="sXy-py-6qz" firstAttribute="leading" secondItem="Y3G-fB-sUq" secondAttribute="leading" id="a8h-Pp-PRp"/>
+                        <constraint firstItem="Odb-kT-1hv" firstAttribute="leading" secondItem="Y3G-fB-sUq" secondAttribute="leading" constant="15" id="rcs-fU-rBZ"/>
+                        <constraint firstAttribute="trailing" secondItem="sXy-py-6qz" secondAttribute="trailing" id="rl9-Sh-cVN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Asi-2o-lxq" userLabel="View6">
+                    <rect key="frame" x="215" y="230" width="130" height="130"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZd-P6-QEp" customClass="HanProgressView" customModule="HanSwiftTools" customModuleProvider="target">
+                            <rect key="frame" x="15" y="30" width="100" height="100"/>
+                            <color key="backgroundColor" red="0.54901960780000003" green="0.87843137250000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="QfH-WW-oJ4"/>
+                                <constraint firstAttribute="height" constant="100" id="V9r-j9-hQC"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="动态单色圆形进度条" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1c-2X-0bg">
+                            <rect key="frame" x="0.0" y="0.0" width="130" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Bc1-ZA-eUd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="53U-pW-L80"/>
+                        <constraint firstAttribute="bottom" secondItem="tZd-P6-QEp" secondAttribute="bottom" id="6pG-FG-1bO"/>
+                        <constraint firstItem="H1c-2X-0bg" firstAttribute="top" secondItem="Asi-2o-lxq" secondAttribute="top" id="7Hr-2A-atC"/>
+                        <constraint firstAttribute="trailing" secondItem="tZd-P6-QEp" secondAttribute="trailing" constant="15" id="Bew-SN-Fqh"/>
+                        <constraint firstItem="tZd-P6-QEp" firstAttribute="leading" secondItem="Asi-2o-lxq" secondAttribute="leading" constant="15" id="nhd-J3-CFV"/>
+                        <constraint firstAttribute="height" constant="130" id="nhr-fU-NxJ"/>
+                        <constraint firstItem="H1c-2X-0bg" firstAttribute="leading" secondItem="Asi-2o-lxq" secondAttribute="leading" id="qAP-XF-Ss1"/>
+                        <constraint firstAttribute="trailing" secondItem="H1c-2X-0bg" secondAttribute="trailing" id="rVd-m7-MKN"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qh-Eb-8Lt">
+                    <rect key="frame" x="30" y="617" width="315" height="40"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.18823529410000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="BaR-3N-x1L"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <state key="normal" title="改变进度">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="addBtnClicked:" destination="-1" eventType="touchUpInside" id="CPu-p3-Jqz"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="MFU-Xm-WmF" firstAttribute="top" secondItem="Uqg-mO-J9F" secondAttribute="bottom" id="0Re-W5-vbR"/>
                 <constraint firstItem="MFU-Xm-WmF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2Tb-i1-pTY"/>
                 <constraint firstItem="MFU-Xm-WmF" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="4VH-5h-UMJ"/>
+                <constraint firstItem="Y3G-fB-sUq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="BxI-6d-OuH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Asi-2o-lxq" secondAttribute="trailing" constant="30" id="HuH-3Z-xCK"/>
                 <constraint firstItem="3wq-HY-Vqx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Leq-WX-btI"/>
                 <constraint firstItem="3wq-HY-Vqx" firstAttribute="top" secondItem="MFU-Xm-WmF" secondAttribute="bottom" id="PNu-kf-BRR"/>
                 <constraint firstItem="Uqg-mO-J9F" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="QfW-gJ-lud"/>
@@ -158,6 +231,8 @@
                 <constraint firstItem="2Qh-Eb-8Lt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="a8W-cC-T7u"/>
                 <constraint firstItem="Uqg-mO-J9F" firstAttribute="top" secondItem="iSn-0f-f1X" secondAttribute="bottom" id="aAm-62-Cww"/>
                 <constraint firstItem="Uqg-mO-J9F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bi4-Ln-ILu"/>
+                <constraint firstItem="Asi-2o-lxq" firstAttribute="top" secondItem="3wq-HY-Vqx" secondAttribute="bottom" id="o83-pM-xJN"/>
+                <constraint firstItem="Y3G-fB-sUq" firstAttribute="top" secondItem="3wq-HY-Vqx" secondAttribute="bottom" id="rtI-sh-daI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2Qh-Eb-8Lt" secondAttribute="bottom" constant="10" id="uW9-J1-TfI"/>
                 <constraint firstItem="iSn-0f-f1X" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="vKg-Lr-28b"/>
                 <constraint firstItem="iSn-0f-f1X" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="yT7-l0-WDB"/>

@@ -7,7 +7,7 @@ Xcode版本   10.1
 Swift版本   4.2  
 
 Extension文件夹  
-为扩建系统方法文件夹  
+为扩展系统方法文件夹  
 定义格式(命名规则)：HanTools_xxx.swift  
 
 例:HanTools_View.swift  

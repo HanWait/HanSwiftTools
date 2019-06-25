@@ -24,7 +24,9 @@ class ExampleVC: UIViewController {
         dataArray = ["相机/相册",
                      "单图放缩",
                      "多图放缩",
-                     "进度条"]
+                     "进度条",
+                     "跑马灯",
+                     "提示信息"]
         
     }
     
@@ -70,6 +72,13 @@ extension ExampleVC:UITableViewDelegate,UITableViewDataSource{
             vc = HanProgressVC()
             vc.title = "进度条"
             break
+        case "跑马灯":
+            vc = HanMarqueeVC()
+            vc.title = "跑马灯"
+            break
+        case "提示信息":
+            vc = HanTipsHUDVC()
+            vc.title = "提示信息"
         default:
             break
         }

@@ -14,7 +14,6 @@ class HanTipsHUD: NSObject {
     
     ///显示位置
     enum HanTipsPosition: Int {
-        case top
         case middle
         case bottom
     }
@@ -47,7 +46,6 @@ class HanTipsHUD: NSObject {
     ///   - position: 位置
     func show(text: String?,position: HanTipsPosition) {
         backgroundView = HanBasicView().getBasicView(backgroundColor: .clear)
-        backgroundView.tag = 1008611
         UIApplication.shared.keyWindow?.addSubview(backgroundView)
   
         let size = getTextSize(text: text ?? "", maxWidth: backgroundView.frame.size.width * 0.8, font: UIFont.systemFont(ofSize: scaleWidth(width: 16)))
@@ -57,12 +55,11 @@ class HanTipsHUD: NSObject {
         blackView.addLayer(cornerRadius: scaleHeight(height: 10), borderColor: nil, borderWidth: nil)
         blackView.backgroundColor = UIColor().HexColor(hexString: "000000", alpha: 0.6)
         switch position {
-        case .top:
-            break
         case .middle:
             blackView.center = CGPoint.init(x: backgroundView.frame.size.width * 0.5, y: backgroundView.frame.size.height * 0.5)
             break
         case .bottom:
+            blackView.center = CGPoint.init(x: backgroundView.frame.size.width * 0.5, y: backgroundView.frame.size.height - blackView.bounds.size.height * 0.5 - 20 )
             break
         }
         backgroundView.addSubview(blackView)
@@ -94,8 +91,9 @@ class HanTipsHUD: NSObject {
     /// 消除视图
     @objc private func hide() {
         for view in (UIApplication.shared.keyWindow?.subviews)!{
-            if  view.tag == 1008611  {
+            if  view == HanTipsHUD.shared?.backgroundView  {
                 view.removeFromSuperview()
+                HanTipsHUD.shared = nil
             }
             
         }

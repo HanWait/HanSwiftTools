@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910452BA22A6747300734187 /* HanAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910452B922A6747300734187 /* HanAlertView.swift */; };
+		910DF8D922A8AD4100835CF3 /* HanMarqueeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910DF8D822A8AD4100835CF3 /* HanMarqueeView.swift */; };
+		910DF8DC22A8B55900835CF3 /* HanMarqueeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910DF8DA22A8B55900835CF3 /* HanMarqueeVC.swift */; };
+		910DF8DD22A8B55900835CF3 /* HanMarqueeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910DF8DB22A8B55900835CF3 /* HanMarqueeVC.xib */; };
 		91181D81228C0CD0002A8C09 /* HanProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91181D80228C0CD0002A8C09 /* HanProgressView.swift */; };
 		9119A6E5228914ED0062D305 /* HanTools_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6E4228914ED0062D305 /* HanTools_UIView.swift */; };
 		9119A6E82289486B0062D305 /* HanTipsHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119A6E72289486B0062D305 /* HanTipsHUD.swift */; };
@@ -32,6 +36,8 @@
 		9119E2BF22856D170087653A /* HanImagePickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9119E2BD22856D170087653A /* HanImagePickerVC.xib */; };
 		9119E2C2228570320087653A /* ExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119E2C0228570320087653A /* ExampleVC.swift */; };
 		9119E2C3228570320087653A /* ExampleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9119E2C1228570320087653A /* ExampleVC.xib */; };
+		911BB57E22C1B9D30090A1F4 /* HanTipsHUDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BB57C22C1B9D30090A1F4 /* HanTipsHUDVC.swift */; };
+		911BB57F22C1B9D30090A1F4 /* HanTipsHUDVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911BB57D22C1B9D30090A1F4 /* HanTipsHUDVC.xib */; };
 		914251B9228A54870010FD8B /* HanZoomPictureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914251B7228A54870010FD8B /* HanZoomPictureVC.swift */; };
 		914251BA228A54870010FD8B /* HanZoomPictureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914251B8228A54870010FD8B /* HanZoomPictureVC.xib */; };
 		914251BC228A5B200010FD8B /* HanZoom.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 914251BB228A5B200010FD8B /* HanZoom.jpeg */; };
@@ -51,6 +57,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		910452B922A6747300734187 /* HanAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanAlertView.swift; sourceTree = "<group>"; };
+		910DF8D822A8AD4100835CF3 /* HanMarqueeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanMarqueeView.swift; sourceTree = "<group>"; };
+		910DF8DA22A8B55900835CF3 /* HanMarqueeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanMarqueeVC.swift; sourceTree = "<group>"; };
+		910DF8DB22A8B55900835CF3 /* HanMarqueeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HanMarqueeVC.xib; sourceTree = "<group>"; };
 		91181D80228C0CD0002A8C09 /* HanProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanProgressView.swift; sourceTree = "<group>"; };
 		9119A6E4228914ED0062D305 /* HanTools_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTools_UIView.swift; sourceTree = "<group>"; };
 		9119A6E72289486B0062D305 /* HanTipsHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTipsHUD.swift; sourceTree = "<group>"; };
@@ -78,6 +88,8 @@
 		9119E2BD22856D170087653A /* HanImagePickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HanImagePickerVC.xib; sourceTree = "<group>"; };
 		9119E2C0228570320087653A /* ExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleVC.swift; sourceTree = "<group>"; };
 		9119E2C1228570320087653A /* ExampleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleVC.xib; sourceTree = "<group>"; };
+		911BB57C22C1B9D30090A1F4 /* HanTipsHUDVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTipsHUDVC.swift; sourceTree = "<group>"; };
+		911BB57D22C1B9D30090A1F4 /* HanTipsHUDVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HanTipsHUDVC.xib; sourceTree = "<group>"; };
 		914251B7228A54870010FD8B /* HanZoomPictureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanZoomPictureVC.swift; sourceTree = "<group>"; };
 		914251B8228A54870010FD8B /* HanZoomPictureVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HanZoomPictureVC.xib; sourceTree = "<group>"; };
 		914251BB228A5B200010FD8B /* HanZoom.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HanZoom.jpeg; sourceTree = "<group>"; };
@@ -121,11 +133,13 @@
 		9119A6E6228946330062D305 /* HanCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				910452B922A6747300734187 /* HanAlertView.swift */,
 				914251BF228A6E800010FD8B /* HanZoomPicturesView */,
 				9119A6E9228949A30062D305 /* HanBasicView.swift */,
 				9119A6E72289486B0062D305 /* HanTipsHUD.swift */,
 				9119A6F02289640F0062D305 /* HanZoomPictureView.swift */,
 				91181D80228C0CD0002A8C09 /* HanProgressView.swift */,
+				910DF8D822A8AD4100835CF3 /* HanMarqueeView.swift */,
 			);
 			path = HanCustomView;
 			sourceTree = "<group>";
@@ -241,6 +255,10 @@
 				914251C4228A6F8D0010FD8B /* HanZoomPicturesVC.swift */,
 				914251DA228A96740010FD8B /* HanProgressVC.swift */,
 				914251DB228A96740010FD8B /* HanProgressVC.xib */,
+				910DF8DA22A8B55900835CF3 /* HanMarqueeVC.swift */,
+				910DF8DB22A8B55900835CF3 /* HanMarqueeVC.xib */,
+				911BB57C22C1B9D30090A1F4 /* HanTipsHUDVC.swift */,
+				911BB57D22C1B9D30090A1F4 /* HanTipsHUDVC.xib */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -300,6 +318,7 @@
 				TargetAttributes = {
 					9119E27222851F780087653A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -330,7 +349,9 @@
 				914251D0228A70430010FD8B /* 7.png in Resources */,
 				914251CE228A70430010FD8B /* 4.png in Resources */,
 				914251CF228A70430010FD8B /* 5.png in Resources */,
+				911BB57F22C1B9D30090A1F4 /* HanTipsHUDVC.xib in Resources */,
 				9119E28122851F7A0087653A /* LaunchScreen.storyboard in Resources */,
+				910DF8DD22A8B55900835CF3 /* HanMarqueeVC.xib in Resources */,
 				914251D3228A70430010FD8B /* 3.png in Resources */,
 				9119A6FF228977520062D305 /* placeholder.png in Resources */,
 				914251DD228A96740010FD8B /* HanProgressVC.xib in Resources */,
@@ -354,6 +375,7 @@
 			files = (
 				9119A6E5228914ED0062D305 /* HanTools_UIView.swift in Sources */,
 				9119A6F322896D3E0062D305 /* HanTools_Predicate.swift in Sources */,
+				910DF8D922A8AD4100835CF3 /* HanMarqueeView.swift in Sources */,
 				9119A6EF2289546A0062D305 /* HanTools_UIColor.swift in Sources */,
 				914251B9228A54870010FD8B /* HanZoomPictureVC.swift in Sources */,
 				914251C5228A6F8D0010FD8B /* HanZoomPicturesVC.swift in Sources */,
@@ -369,11 +391,14 @@
 				9119E2BB2285612B0087653A /* HanPublicBlock.swift in Sources */,
 				9119E2C2228570320087653A /* ExampleVC.swift in Sources */,
 				9119A6F12289640F0062D305 /* HanZoomPictureView.swift in Sources */,
+				910452BA22A6747300734187 /* HanAlertView.swift in Sources */,
 				91181D81228C0CD0002A8C09 /* HanProgressView.swift in Sources */,
 				9119E27722851F780087653A /* AppDelegate.swift in Sources */,
+				910DF8DC22A8B55900835CF3 /* HanMarqueeVC.swift in Sources */,
 				9119E2B9228560560087653A /* HanImagePicker.swift in Sources */,
 				914251C1228A6EC30010FD8B /* HanZoomPicturesScrollView.swift in Sources */,
 				9119A6F522896DC50062D305 /* HanTools_String.swift in Sources */,
+				911BB57E22C1B9D30090A1F4 /* HanTipsHUDVC.swift in Sources */,
 				9119A6ED22894ED60062D305 /* HanTools.swift in Sources */,
 				9119A6E82289486B0062D305 /* HanTipsHUD.swift in Sources */,
 				9119A6EA228949A30062D305 /* HanBasicView.swift in Sources */,

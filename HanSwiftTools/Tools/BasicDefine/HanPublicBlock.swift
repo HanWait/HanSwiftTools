@@ -16,3 +16,10 @@ typealias HanImageBlock = (_ image:UIImage?) -> Void
 
 /// 带error的block
 typealias HanErrorBlock = (_ error: NSError?) -> Void
+
+/// 空block
+typealias HanBlock = () -> Void
+
+/// 带字符串的block
+typealias HanStringBlcok = (_ string:String?) -> Void
+

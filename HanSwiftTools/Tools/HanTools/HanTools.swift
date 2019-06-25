@@ -24,3 +24,18 @@ public func getTextSize(text: String, maxWidth: CGFloat,font:UIFont) -> CGRect {
     return size
     
 }
+// MARK: - 获取 文字高度
+/// 获取 文字高度
+///
+/// - Parameters:
+///   - text: 文字
+///   - maxHeight: 最大高
+///   - font: 字体
+/// - Returns: 文字宽高
+public func getTextSize(text: String, maxHeight: CGFloat,font:UIFont) -> CGRect {
+    let maxSize = CGSize(width: 0, height: maxHeight)   //注意宽度是0
+    let size = text.boundingRect(with: maxSize, options: [.usesLineFragmentOrigin,.usesFontLeading],
+                                 attributes: [NSAttributedString.Key.font:font], context: nil)
+    return size
+    
+}

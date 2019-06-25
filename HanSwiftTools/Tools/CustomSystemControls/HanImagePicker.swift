@@ -136,6 +136,9 @@ class HanImagePicker: NSObject {
             if status == .restricted || status == .denied{
                 HanTipsHUD.shared?.show(text: "APP访问您的相机受限", position: .middle)
                 return
+            }else if status == .notDetermined{
+                HanTipsHUD.shared?.show(text: "APP访问您的相机受限", position: .middle)
+                return
             }else{
                 ///相机
                 imagePC.sourceType = .camera

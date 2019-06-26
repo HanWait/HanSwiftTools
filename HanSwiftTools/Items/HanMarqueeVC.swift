@@ -16,17 +16,18 @@ class HanMarqueeVC: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        marqueeView = HanMarqueeView.init(frame: CGRect.init(x: 30, y: 100, width: 150, height: 50), content: "我是一个跑马灯,嗯，一个跑马灯！我是一个跑马灯,嗯，一个跑马灯！我是一个跑马灯,嗯，一个跑马灯！我是一个跑马灯,嗯，一个跑马灯！我是一个跑马灯,嗯，一个跑马灯！我是一个跑马灯,嗯，一个跑马灯！我是一个跑马灯,嗯，一个跑马灯！我是一个跑马灯,嗯，一个跑马灯！")
+        marqueeView = HanMarqueeView.init(frame: CGRect.init(x: 30, y: 100, width: 150, height: 50), content: "我是一个跑马灯,嗯，一个跑马灯！")
         marqueeView.backgroundColor = UIColor.yellow
+//        marqueeView.contentFont = UIFont.systemFont(ofSize: 20)
+//        marqueeView.contentColor = UIColor.red
         self.view.addSubview(marqueeView)
         
     }
     
     @IBAction func startBtnClicked(_ sender: UIButton) {
         marqueeView.start()
-    }
-    @IBAction func stopBtnClicked(_ sender: UIButton) {
-        marqueeView.stop()
+        sender.isUserInteractionEnabled = false
+        sender.backgroundColor = UIColor.lightGray
     }
     @IBAction func pauseBtnClicked(_ sender: UIButton) {
         marqueeView.pause()

@@ -82,3 +82,15 @@ extension UIView{
         }
     }
 }
+extension UIView {
+    
+    /// 清楚所有子视图
+    func clearAll(){
+        
+        if self.subviews.count > 0 {
+            self.subviews.forEach({ $0.removeFromSuperview()});
+        }
+        
+    }
+    
+}

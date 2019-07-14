@@ -38,6 +38,10 @@
 		9119E2C3228570320087653A /* ExampleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9119E2C1228570320087653A /* ExampleVC.xib */; };
 		911BB57E22C1B9D30090A1F4 /* HanTipsHUDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BB57C22C1B9D30090A1F4 /* HanTipsHUDVC.swift */; };
 		911BB57F22C1B9D30090A1F4 /* HanTipsHUDVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911BB57D22C1B9D30090A1F4 /* HanTipsHUDVC.xib */; };
+		9133090722C34A39000D8B3D /* HanBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133090622C34A39000D8B3D /* HanBasicViewController.swift */; };
+		9133090A22C34B0B000D8B3D /* HanBasicNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133090922C34B0B000D8B3D /* HanBasicNavigationView.swift */; };
+		9133090F22C352A1000D8B3D /* HanNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133090E22C352A1000D8B3D /* HanNavVC.swift */; };
+		9133091122C354F1000D8B3D /* back_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9133091022C354F1000D8B3D /* back_icon@2x.png */; };
 		914251B9228A54870010FD8B /* HanZoomPictureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914251B7228A54870010FD8B /* HanZoomPictureVC.swift */; };
 		914251BA228A54870010FD8B /* HanZoomPictureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914251B8228A54870010FD8B /* HanZoomPictureVC.xib */; };
 		914251BC228A5B200010FD8B /* HanZoom.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 914251BB228A5B200010FD8B /* HanZoom.jpeg */; };
@@ -90,6 +94,10 @@
 		9119E2C1228570320087653A /* ExampleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleVC.xib; sourceTree = "<group>"; };
 		911BB57C22C1B9D30090A1F4 /* HanTipsHUDVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanTipsHUDVC.swift; sourceTree = "<group>"; };
 		911BB57D22C1B9D30090A1F4 /* HanTipsHUDVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HanTipsHUDVC.xib; sourceTree = "<group>"; };
+		9133090622C34A39000D8B3D /* HanBasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanBasicViewController.swift; sourceTree = "<group>"; };
+		9133090922C34B0B000D8B3D /* HanBasicNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanBasicNavigationView.swift; sourceTree = "<group>"; };
+		9133090E22C352A1000D8B3D /* HanNavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanNavVC.swift; sourceTree = "<group>"; };
+		9133091022C354F1000D8B3D /* back_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@2x.png"; sourceTree = "<group>"; };
 		914251B7228A54870010FD8B /* HanZoomPictureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanZoomPictureVC.swift; sourceTree = "<group>"; };
 		914251B8228A54870010FD8B /* HanZoomPictureVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HanZoomPictureVC.xib; sourceTree = "<group>"; };
 		914251BB228A5B200010FD8B /* HanZoom.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HanZoom.jpeg; sourceTree = "<group>"; };
@@ -231,6 +239,7 @@
 		9119E2AB228521520087653A /* BasicDefine */ = {
 			isa = PBXGroup;
 			children = (
+				9133090822C34A58000D8B3D /* HanBasicVC */,
 				9119E2AC228521830087653A /* HanBasicDefine.swift */,
 				9119E2BA2285612B0087653A /* HanPublicBlock.swift */,
 			);
@@ -243,6 +252,24 @@
 				9119E2B8228560560087653A /* HanImagePicker.swift */,
 			);
 			path = CustomSystemControls;
+			sourceTree = "<group>";
+		};
+		9133090822C34A58000D8B3D /* HanBasicVC */ = {
+			isa = PBXGroup;
+			children = (
+				9133090B22C350E5000D8B3D /* image */,
+				9133090622C34A39000D8B3D /* HanBasicViewController.swift */,
+				9133090922C34B0B000D8B3D /* HanBasicNavigationView.swift */,
+			);
+			path = HanBasicVC;
+			sourceTree = "<group>";
+		};
+		9133090B22C350E5000D8B3D /* image */ = {
+			isa = PBXGroup;
+			children = (
+				9133091022C354F1000D8B3D /* back_icon@2x.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 		914251B6228A53E40010FD8B /* Items */ = {
@@ -259,6 +286,7 @@
 				910DF8DB22A8B55900835CF3 /* HanMarqueeVC.xib */,
 				911BB57C22C1B9D30090A1F4 /* HanTipsHUDVC.swift */,
 				911BB57D22C1B9D30090A1F4 /* HanTipsHUDVC.xib */,
+				9133090E22C352A1000D8B3D /* HanNavVC.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -349,6 +377,7 @@
 				914251D0228A70430010FD8B /* 7.png in Resources */,
 				914251CE228A70430010FD8B /* 4.png in Resources */,
 				914251CF228A70430010FD8B /* 5.png in Resources */,
+				9133091122C354F1000D8B3D /* back_icon@2x.png in Resources */,
 				911BB57F22C1B9D30090A1F4 /* HanTipsHUDVC.xib in Resources */,
 				9119E28122851F7A0087653A /* LaunchScreen.storyboard in Resources */,
 				910DF8DD22A8B55900835CF3 /* HanMarqueeVC.xib in Resources */,
@@ -400,8 +429,11 @@
 				9119A6F522896DC50062D305 /* HanTools_String.swift in Sources */,
 				911BB57E22C1B9D30090A1F4 /* HanTipsHUDVC.swift in Sources */,
 				9119A6ED22894ED60062D305 /* HanTools.swift in Sources */,
+				9133090722C34A39000D8B3D /* HanBasicViewController.swift in Sources */,
 				9119A6E82289486B0062D305 /* HanTipsHUD.swift in Sources */,
 				9119A6EA228949A30062D305 /* HanBasicView.swift in Sources */,
+				9133090F22C352A1000D8B3D /* HanNavVC.swift in Sources */,
+				9133090A22C34B0B000D8B3D /* HanBasicNavigationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

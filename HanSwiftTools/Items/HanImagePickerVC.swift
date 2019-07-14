@@ -26,6 +26,11 @@ class HanImagePickerVC: UIViewController {
     @IBAction func takePhotoBtnClicked(_ sender: Any) {
         
         
+        /*
+         注：
+            防止循环引用
+         */
+        
         weak var this = self
         
         hanImagePicker.showPicker(allowEdit: false, type: .all) { (image) in

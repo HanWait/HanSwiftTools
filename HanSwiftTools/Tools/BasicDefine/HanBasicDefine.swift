@@ -21,7 +21,7 @@ public let kStatusBarHeight = UIApplication.shared.statusBarFrame.size.height
 ///导航栏高度
 public let kNavBarHeight = 44.0 as CGFloat
 ///tabbar高度
-public let kTabBarHeight = kStatusBarHeight>20 ? 83 : 49
+public let kTabBarHeight:CGFloat = kStatusBarHeight>20 ? 83 : 49
 ///顶部高度：状态栏高度+导航栏高度
 public let kTopHeight = (kStatusBarHeight + kNavBarHeight)
 /// keyWindow

@@ -26,7 +26,8 @@ class ExampleVC: UIViewController {
                      "多图放缩",
                      "进度条",
                      "跑马灯",
-                     "提示信息"]
+                     "提示信息",
+                     "basicVC"]
         
     }
     
@@ -79,6 +80,8 @@ extension ExampleVC:UITableViewDelegate,UITableViewDataSource{
         case "提示信息":
             vc = HanTipsHUDVC()
             vc.title = "提示信息"
+        case "basicVC":
+            vc = HanNavVC()
         default:
             break
         }

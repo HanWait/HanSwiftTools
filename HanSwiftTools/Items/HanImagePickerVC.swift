@@ -21,6 +21,10 @@ class HanImagePickerVC: UIViewController {
         hanIPImageView.contentMode = .scaleAspectFill
         
     }
+    
+    deinit {
+        print("----------释放--------")
+    }
 
     /// 调用相机/相册点击事件
     @IBAction func takePhotoBtnClicked(_ sender: Any) {

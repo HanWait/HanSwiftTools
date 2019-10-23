@@ -27,11 +27,12 @@ class HanBasicNavigationView: UIView {
     private func createUI() {
         self.backgroundColor = UIColor.white
         
-        navImageView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: self.width, height: self.height))
-        bgView.addSubview(navImageView)
         
         bgView = UIView.init(frame: CGRect.init(x: 0.0, y: kStatusBarHeight, width: self.width, height: kNavBarHeight))
         self.addSubview(bgView)
+        
+        navImageView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: self.width, height: self.height))
+        bgView.addSubview(navImageView)
         
         titleLabel = UILabel.init(frame: .init(x: 50, y: 0, width: bgView.width - 100, height: bgView.height))
         titleLabel.textAlignment = .center

@@ -78,15 +78,6 @@ class HanMarqueeView: UIView {
         let textFont = self.contentFont == nil ? UIFont.systemFont(ofSize: 16) : self.contentFont!
         let size = getTextSize(text: self.content!, maxHeight: self.height, font: textFont)
         
-        /*
-         
-         悠悠琴声抠心弦
-         小桥流水碧连天
-         桥下静水变激流
-         桥上回首
-         
-         */
-        
         
         leftLabel.frame = CGRect.init(x: 0, y: 0, width: size.width, height: self.height)
         leftLabel.text = self.content

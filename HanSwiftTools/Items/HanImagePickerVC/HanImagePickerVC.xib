@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,21 +20,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lUg-RY-CMb">
-                    <rect key="frame" x="87.5" y="167" width="200" height="200"/>
+                    <rect key="frame" x="87.5" y="183.5" width="200" height="200"/>
                     <gestureRecognizers/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="200" id="cHC-3O-nwr"/>
-                        <constraint firstAttribute="height" constant="200" id="rWW-nK-6vJ"/>
+                        <constraint firstAttribute="width" constant="200" id="330-Ww-3mg"/>
+                        <constraint firstAttribute="height" constant="200" id="y72-AZ-a8h"/>
                     </constraints>
                     <connections>
                         <outletCollection property="gestureRecognizers" destination="Qbc-Ot-5zZ" appends="YES" id="gSX-od-qPU"/>
                     </connections>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEP-eS-XpO">
-                    <rect key="frame" x="19" y="427" width="150" height="40"/>
+                    <rect key="frame" x="19" y="433.5" width="150" height="40"/>
                     <color key="backgroundColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="OEs-ma-5ow"/>
+                        <constraint firstAttribute="width" constant="150" id="VrH-cW-5Ib"/>
+                        <constraint firstAttribute="height" constant="40" id="tno-nF-hTt"/>
                     </constraints>
                     <state key="normal" title="图片"/>
                     <connections>
@@ -44,10 +43,11 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lL-CN-Dtf">
-                    <rect key="frame" x="206.5" y="427" width="150" height="40"/>
+                    <rect key="frame" x="206.5" y="433.5" width="150" height="40"/>
                     <color key="backgroundColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="YeW-Bp-Pp4"/>
+                        <constraint firstAttribute="height" constant="40" id="BuZ-rT-4yW"/>
+                        <constraint firstAttribute="width" constant="150" id="wve-1o-mVL"/>
                     </constraints>
                     <state key="normal" title="保存图片"/>
                     <connections>
@@ -57,14 +57,12 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="1lL-CN-Dtf" firstAttribute="width" secondItem="LEP-eS-XpO" secondAttribute="width" id="BRF-RN-wNy"/>
-                <constraint firstItem="lUg-RY-CMb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JIy-df-nhg"/>
-                <constraint firstItem="LEP-eS-XpO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.5" id="YEI-4U-8at"/>
-                <constraint firstItem="LEP-eS-XpO" firstAttribute="top" secondItem="lUg-RY-CMb" secondAttribute="bottom" constant="60" id="YJx-02-1PX"/>
-                <constraint firstItem="1lL-CN-Dtf" firstAttribute="top" secondItem="LEP-eS-XpO" secondAttribute="top" id="clL-xJ-MUs"/>
-                <constraint firstItem="lUg-RY-CMb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.8" id="ibt-Rt-bYz"/>
-                <constraint firstItem="1lL-CN-Dtf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="1.5" id="o1R-Sk-KrV"/>
-                <constraint firstItem="LEP-eS-XpO" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.4" id="rNv-Zs-2pK"/>
+                <constraint firstItem="1lL-CN-Dtf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="1.5" id="5Cr-iq-RA1"/>
+                <constraint firstItem="lUg-RY-CMb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8LD-VO-Wwa"/>
+                <constraint firstItem="LEP-eS-XpO" firstAttribute="top" secondItem="lUg-RY-CMb" secondAttribute="bottom" constant="50" id="MOZ-gO-Ro5"/>
+                <constraint firstItem="LEP-eS-XpO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.5" id="NaK-Hy-E3i"/>
+                <constraint firstItem="lUg-RY-CMb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="gfQ-M9-ymT"/>
+                <constraint firstItem="1lL-CN-Dtf" firstAttribute="top" secondItem="lUg-RY-CMb" secondAttribute="bottom" constant="50" id="ng2-hJ-AbR"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="130.40000000000001" y="153.37331334332833"/>

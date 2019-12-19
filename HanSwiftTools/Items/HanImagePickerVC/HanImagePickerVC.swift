@@ -29,12 +29,6 @@ class HanImagePickerVC: UIViewController {
     /// 调用相机/相册点击事件
     @IBAction func takePhotoBtnClicked(_ sender: Any) {
         
-        
-        /*
-         注：
-            防止循环引用
-         */
-        
         weak var this = self
         
         hanImagePicker.showPicker(allowEdit: false, type: .all) { (image) in
@@ -45,7 +39,7 @@ class HanImagePickerVC: UIViewController {
     
     /// 保存点击事件  保存图片
     @IBAction func savePhotoBtnClicked(_ sender: Any) {
-//        hanImagePicker.saveImage(image: self.hanIPImageView.image,error:)
+        
         hanImagePicker.saveImage(image: self.hanIPImageView.image) { (error) in
             if error != nil{
                 HanTipsHUD.shared?.show(text: "保存失败", position: .middle)

@@ -8,6 +8,7 @@
 
 import UIKit
 import Photos
+import AssetsLibrary
 /// 调用系统相机相册
 class HanImagePicker: NSObject {
 
@@ -34,6 +35,14 @@ class HanImagePicker: NSObject {
     
     /// 保存图片是否成功
     private var saveError:HanErrorBlock?
+    
+    /// 调用相机是否成功
+    private var isGetCameraSuccess:Bool = false
+    
+    /// 调用相册是否成功
+    private var isGetAlbumSuccess:Bool = false
+    
+    
     /// 加载手机相机相册
     ///
     /// - Parameters:
@@ -95,7 +104,7 @@ class HanImagePicker: NSObject {
         if image == nil {
             HanTipsHUD.shared?.show(text: "图片为空", position: .middle)
         }else{
-            UIImageWriteToSavedPhotosAlbum(image!, self, #selector(saveImage(image:didFinishSavingWithError:contextInfo:)), nil)
+            self.checkAlbumPermission(image: image!)
         }
         
     }
@@ -105,15 +114,36 @@ class HanImagePicker: NSObject {
         if self.photograph == nil {
             HanTipsHUD.shared?.show(text: "图片为空", position: .middle)
         }else{
-            UIImageWriteToSavedPhotosAlbum(self.photograph!, self, #selector(saveImage(image:didFinishSavingWithError:contextInfo:)), nil)
+            self.checkAlbumPermission(image: self.photograph!)
         }
         
     }
+    
+    
+    private func checkAlbumPermission(image:UIImage){
+        let status = PHPhotoLibrary.authorizationStatus()
+        
+        if (status == .restricted) {// 这个应用程序未被授权访问图片数据。用户不能更改该应用程序的状态,可能是由于活动的限制,如家长控制到位。
+            HanTipsHUD.shared?.show(text: "APP访问您的相册受限", position: .middle)
+        }else if(status == .denied){//用户已经明确否认了这个应用程序访问图片数据
+            HanTipsHUD.shared?.show(text: "APP访问您的相册受限-->请到设置-->HanSwiftTools-->打开相册", position: .middle)
+        }else if status == .notDetermined{// 用户还没有关于这个应用程序做出了选择
+            PHPhotoLibrary.requestAuthorization { (sta) in
+                if(sta == .authorized){
+                    UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.saveImage(image:didFinishSavingWithError:contextInfo:)), nil)
+                }
+            }
+        }else{//authorized 用户授权此应用程序访问图片数据
+            UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.saveImage(image:didFinishSavingWithError:contextInfo:)), nil)
+        }
+    }
+    
     @objc private func saveImage(image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: AnyObject) {
         if self.saveError != nil{
             self.saveError!(error)
         }
     }
+    
     
     /// 加载UIImagePickerController
     ///
@@ -123,30 +153,100 @@ class HanImagePicker: NSObject {
         let imagePC = UIImagePickerController()
         imagePC.delegate = self
         if type == 1 {
-            let status = PHPhotoLibrary.authorizationStatus()
-            if status == .restricted || status == .denied{
-                HanTipsHUD.shared?.show(text: "APP访问您的相册受限", position: .middle)
+            self.isGetAlbumSuccess = false
+            self.checkAlbumPermission(imagePC: imagePC)
+            if self.isGetAlbumSuccess == false {
                 return
-            }else{
-                ///相册
-                imagePC.sourceType = .photoLibrary
             }
         }else{
-            let status = AVCaptureDevice.authorizationStatus(for: .video)
-            if status == .restricted || status == .denied{
-                HanTipsHUD.shared?.show(text: "APP访问您的相机受限", position: .middle)
+            self.isGetCameraSuccess = false
+            self.checkCameraPermission(imagePC: imagePC)
+            if self.isGetCameraSuccess == false {
                 return
-            }else if status == .notDetermined{
-                HanTipsHUD.shared?.show(text: "APP访问您的相机受限", position: .middle)
-                return
-            }else{
-                ///相机
-                imagePC.sourceType = .camera
             }
         }
-        imagePC.allowsEditing = self.allowEdit
-        HanRootVC?.present(imagePC, animated: true, completion: nil)
         
+        
+    }
+    
+    private func checkCameraPermission(imagePC:UIImagePickerController){
+        let status = AVCaptureDevice.authorizationStatus(for: .video)
+        
+        if (status == .restricted) {// 这个应用程序未被授权访问图片数据。用户不能更改该应用程序的状态,可能是由于活动的限制,如家长控制到位。
+            HanTipsHUD.shared?.show(text: "APP访问您的相机受限", position: .middle)
+            self.isGetCameraSuccess = false
+        }else if(status == .denied){//用户已经明确否认了这个应用程序访问图片数据
+            HanTipsHUD.shared?.show(text: "APP访问您的相机受限-->请到设置-->HanSwiftTools-->打开相机", position: .middle)
+            self.isGetCameraSuccess = false
+        }else if status == .notDetermined{// 用户还没有关于这个应用程序做出了选择
+            weak var this = self
+            AVCaptureDevice.requestAccess(for: .video) { (granted) in
+                if(granted){
+                    DispatchQueue.main.async {
+                        if(granted){
+                            this?.isGetCameraSuccess = true
+                            this?.takePhoto(imagePC: imagePC)
+                        
+                        }
+                    }
+                    
+                }
+            }
+        }else{//authorized 用户授权此应用程序访问图片数据
+            self.isGetCameraSuccess = true
+            self.takePhoto(imagePC: imagePC)
+        }
+        
+    }
+    
+    
+    private func takePhoto(imagePC:UIImagePickerController){
+        if (UIImagePickerController.isSourceTypeAvailable(.camera)) {
+            imagePC.sourceType = .camera
+            imagePC.allowsEditing = self.allowEdit
+            HanRootVC?.present(imagePC, animated: true, completion: nil)
+        }else{
+            HanTipsHUD.shared?.show(text: "不能使用模拟器进行拍照", position: .middle)
+            self.isGetCameraSuccess = false
+        }
+        
+       
+    }
+    
+    private func checkAlbumPermission(imagePC:UIImagePickerController){
+        let status = PHPhotoLibrary.authorizationStatus()
+        
+        if (status == .restricted) {// 这个应用程序未被授权访问图片数据。用户不能更改该应用程序的状态,可能是由于活动的限制,如家长控制到位。
+            HanTipsHUD.shared?.show(text: "APP访问您的相册受限", position: .middle)
+            self.isGetAlbumSuccess = false
+        }else if(status == .denied){//用户已经明确否认了这个应用程序访问图片数据
+            HanTipsHUD.shared?.show(text: "APP访问您的相册受限-->请到设置-->HanSwiftTools-->打开相册", position: .middle)
+            self.isGetAlbumSuccess = false
+        }else if status == .notDetermined{// 用户还没有关于这个应用程序做出了选择
+            weak var this = self
+            PHPhotoLibrary.requestAuthorization { (sta) in
+                DispatchQueue.main.async {
+                    if(sta == .authorized){
+                         this?.isGetAlbumSuccess = true
+                        this?.selectAlbum(imagePC: imagePC)
+                       
+                    }
+                }
+            }
+        }else{//authorized 用户授权此应用程序访问图片数据
+            self.isGetAlbumSuccess = true
+            self.selectAlbum(imagePC: imagePC)
+            
+        }
+    }
+    
+    private func selectAlbum(imagePC:UIImagePickerController){
+        
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            imagePC.sourceType = .photoLibrary
+            imagePC.allowsEditing = self.allowEdit
+            HanRootVC?.present(imagePC, animated: true, completion: nil)
+        }
     }
     
 }

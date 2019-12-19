@@ -35,6 +35,9 @@ class HanProgressVC: UIViewController {
         self.circleMoveProgressView()
     }
 
+    deinit {
+        print("----------释放--------")
+    }
     
     private func straightProgressView() {
         self.progress = 0.5

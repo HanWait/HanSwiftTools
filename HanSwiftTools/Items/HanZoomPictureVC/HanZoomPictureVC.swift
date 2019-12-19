@@ -44,6 +44,9 @@ class HanZoomPictureVC: UIViewController {
         }
         
     }
+    deinit {
+        print("----------释放--------")
+    }
     /// 图片点击事件  放大图片
     @IBAction func localImageViewClicked(_ sender: Any) {
         HanZoomPictureView.shared?.show(image: hanZPLocalImageView.image)

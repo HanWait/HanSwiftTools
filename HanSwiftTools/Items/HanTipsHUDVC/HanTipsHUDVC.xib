@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HanTipsHUDVC" customModule="HanSwiftTools" customModuleProvider="target">
             <connections>
+                <outlet property="hanTF" destination="02s-43-f51" id="hUW-fB-0Ng"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -44,16 +43,27 @@
                         <action selector="bottomBtnClicked:" destination="-1" eventType="touchUpInside" id="fKP-SL-OnW"/>
                     </connections>
                 </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02s-43-f51">
+                    <rect key="frame" x="30" y="194" width="260" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="g4b-Hk-UYa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="q42-iG-zda" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="A85-uz-YLY"/>
+                <constraint firstItem="02s-43-f51" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="KA4-8F-ayz"/>
                 <constraint firstItem="q42-iG-zda" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.5" id="ODI-hO-Vcu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="02s-43-f51" secondAttribute="trailing" constant="30" id="cV8-gG-MAa"/>
                 <constraint firstItem="3ZI-sT-OFt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="1.5" id="hfQ-6M-CCT"/>
                 <constraint firstItem="3ZI-sT-OFt" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="lsA-7C-80J"/>
+                <constraint firstItem="q42-iG-zda" firstAttribute="top" secondItem="02s-43-f51" secondAttribute="bottom" constant="25" id="rvb-h9-0MC"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="132" y="110.19490254872565"/>
+            <point key="canvasLocation" x="45" y="71"/>
         </view>
     </objects>
 </document>

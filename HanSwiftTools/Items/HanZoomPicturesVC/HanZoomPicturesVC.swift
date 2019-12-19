@@ -23,4 +23,8 @@ class HanZoomPicturesVC: UIViewController {
         showView.showImagesWithImageArray(imageArr: [UIImage.init(named: "1") ?? UIImage(),UIImage.init(named: "2") ?? UIImage(),UIImage.init(named: "3") ?? UIImage(),UIImage.init(named: "4") ?? UIImage(),UIImage.init(named: "5") ?? UIImage(),UIImage.init(named: "7") ?? UIImage(),UIImage.init(named: "6") ?? UIImage()])
     }
     
+    deinit {
+        print("----------释放--------")
+    }
+    
 }

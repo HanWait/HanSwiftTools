@@ -10,7 +10,7 @@ import UIKit
 
 class ExampleVC: UIViewController {
     @IBOutlet weak var hanTableView: UITableView!
-    var dataArray:[String] = []
+    var dataArray:[[String:[String]]] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,13 +21,24 @@ class ExampleVC: UIViewController {
         }
         
         self.title  = "事例"
-        dataArray = ["相机/相册",
-                     "单图放缩",
-                     "多图放缩",
-                     "进度条",
-                     "跑马灯",
-                     "提示信息",
-                     "basicVC"]
+        
+        
+        dataArray = [
+           [ "封装系统方法":
+                ["相机/相册","网络状态"]],
+           ["扩展系统方法":
+           ["base64加密",
+            "MD5加密",]],
+            ["自定义视图":
+                ["单图放缩",
+                 "多图放缩",
+                 "进度条",
+                 "跑马灯",
+                 "提示信息",]],
+            ["自定义方法":
+            ["各种正则判断",]]
+            
+        ]
         
     }
     
@@ -38,15 +49,41 @@ class ExampleVC: UIViewController {
 
 extension ExampleVC:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let dic:Dictionary = self.dataArray[section]
+        var arr:[String] = []
+        for v in dic.values {
+            arr = v
+        }
+        return arr.count
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
         return self.dataArray.count
     }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let dic:Dictionary = self.dataArray[section]
+        var title:String = ""
+        for v in dic.keys {
+            title = v
+        }
+        return title
+                      
+    }
+    
+
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell  = tableView.dequeueReusableCell(withIdentifier: "cell")
         if cell == nil {
             cell = UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
         }
-        cell?.textLabel?.text = self.dataArray[indexPath.row]
+        let dic:Dictionary = self.dataArray[indexPath.section]
+        var arr:[String] = []
+        for v in dic.values {
+            arr = v
+        }
+
+        cell?.textLabel?.text = arr[indexPath.row]
         return cell!
     }
     
@@ -59,35 +96,50 @@ extension ExampleVC:UITableViewDelegate,UITableViewDataSource{
         switch cell?.textLabel?.text {
         case "相机/相册":
             vc = HanImagePickerVC()
-            vc.title = "相机/相册"
+            break
+        case "网络状态":
+            vc = HanNetworkVC()
             break
         case "单图放缩":
             vc = HanZoomPictureVC()
-            vc.title = "单图放缩"
             break
         case "多图放缩":
             vc = HanZoomPicturesVC()
-            vc.title = "多图放缩"
             break
         case "进度条":
             vc = HanProgressVC()
-            vc.title = "进度条"
             break
         case "跑马灯":
             vc = HanMarqueeVC()
-            vc.title = "跑马灯"
             break
         case "提示信息":
             vc = HanTipsHUDVC()
-            vc.title = "提示信息"
+            break
         case "basicVC":
             vc = HanNavVC()
+            break
+        case "base64加密":
+            vc = HanEncryptionVC()
+            break
+        case "MD5加密":
+            vc = HanEncryptionVC()
+        break
         default:
             break
         }
-       
+        let dic:Dictionary = self.dataArray[indexPath.section]
+        var arr:[String] = []
+        for v in dic.values {
+            arr = v
+        }
+
+        vc.title = arr[indexPath.row]
+        
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
 }
+
+
+

@@ -42,6 +42,8 @@
 		9133090A22C34B0B000D8B3D /* HanBasicNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133090922C34B0B000D8B3D /* HanBasicNavigationView.swift */; };
 		9133090F22C352A1000D8B3D /* HanNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133090E22C352A1000D8B3D /* HanNavVC.swift */; };
 		9133091122C354F1000D8B3D /* back_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9133091022C354F1000D8B3D /* back_icon@2x.png */; };
+		9137830423A1F00500CCD2F7 /* HanEncryptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9137830223A1F00500CCD2F7 /* HanEncryptionVC.swift */; };
+		9137830523A1F00500CCD2F7 /* HanEncryptionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9137830323A1F00500CCD2F7 /* HanEncryptionVC.xib */; };
 		914251B9228A54870010FD8B /* HanZoomPictureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914251B7228A54870010FD8B /* HanZoomPictureVC.swift */; };
 		914251BA228A54870010FD8B /* HanZoomPictureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914251B8228A54870010FD8B /* HanZoomPictureVC.xib */; };
 		914251BC228A5B200010FD8B /* HanZoom.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 914251BB228A5B200010FD8B /* HanZoom.jpeg */; };
@@ -58,6 +60,10 @@
 		914251D4228A70430010FD8B /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 914251CD228A70430010FD8B /* 1.png */; };
 		914251DC228A96740010FD8B /* HanProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914251DA228A96740010FD8B /* HanProgressVC.swift */; };
 		914251DD228A96740010FD8B /* HanProgressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914251DB228A96740010FD8B /* HanProgressVC.xib */; };
+		91E33F3D23AA287400666741 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E33F3B23AA287400666741 /* Reachability.swift */; };
+		91E33F3E23AA287400666741 /* HanReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E33F3C23AA287400666741 /* HanReachability.swift */; };
+		91E33F4223AA292F00666741 /* HanNetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E33F4023AA292F00666741 /* HanNetworkVC.swift */; };
+		91E33F4323AA292F00666741 /* HanNetworkVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E33F4123AA292F00666741 /* HanNetworkVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +104,8 @@
 		9133090922C34B0B000D8B3D /* HanBasicNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanBasicNavigationView.swift; sourceTree = "<group>"; };
 		9133090E22C352A1000D8B3D /* HanNavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanNavVC.swift; sourceTree = "<group>"; };
 		9133091022C354F1000D8B3D /* back_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@2x.png"; sourceTree = "<group>"; };
+		9137830223A1F00500CCD2F7 /* HanEncryptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanEncryptionVC.swift; sourceTree = "<group>"; };
+		9137830323A1F00500CCD2F7 /* HanEncryptionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HanEncryptionVC.xib; sourceTree = "<group>"; };
 		914251B7228A54870010FD8B /* HanZoomPictureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanZoomPictureVC.swift; sourceTree = "<group>"; };
 		914251B8228A54870010FD8B /* HanZoomPictureVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HanZoomPictureVC.xib; sourceTree = "<group>"; };
 		914251BB228A5B200010FD8B /* HanZoom.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HanZoom.jpeg; sourceTree = "<group>"; };
@@ -114,6 +122,10 @@
 		914251CD228A70430010FD8B /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		914251DA228A96740010FD8B /* HanProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanProgressVC.swift; sourceTree = "<group>"; };
 		914251DB228A96740010FD8B /* HanProgressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HanProgressVC.xib; sourceTree = "<group>"; };
+		91E33F3B23AA287400666741 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		91E33F3C23AA287400666741 /* HanReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HanReachability.swift; sourceTree = "<group>"; };
+		91E33F4023AA292F00666741 /* HanNetworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanNetworkVC.swift; sourceTree = "<group>"; };
+		91E33F4123AA292F00666741 /* HanNetworkVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HanNetworkVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +238,7 @@
 		9119E2AA228521450087653A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				91E33F3A23AA287400666741 /* HanNetwork */,
 				9119A6F622896F240062D305 /* Encryption */,
 				9119A6EB22894EC30062D305 /* HanTools */,
 				9119A6E6228946330062D305 /* HanCustomView */,
@@ -254,6 +267,15 @@
 			path = CustomSystemControls;
 			sourceTree = "<group>";
 		};
+		911AE9DE23A0D4AF0032D961 /* HanImagePickerVC */ = {
+			isa = PBXGroup;
+			children = (
+				9119E2BC22856D170087653A /* HanImagePickerVC.swift */,
+				9119E2BD22856D170087653A /* HanImagePickerVC.xib */,
+			);
+			path = HanImagePickerVC;
+			sourceTree = "<group>";
+		};
 		9133090822C34A58000D8B3D /* HanBasicVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,21 +294,79 @@
 			path = image;
 			sourceTree = "<group>";
 		};
+		913782FB23A1EB5200CCD2F7 /* HanZoomPictureVC */ = {
+			isa = PBXGroup;
+			children = (
+				914251B7228A54870010FD8B /* HanZoomPictureVC.swift */,
+				914251B8228A54870010FD8B /* HanZoomPictureVC.xib */,
+			);
+			path = HanZoomPictureVC;
+			sourceTree = "<group>";
+		};
+		913782FC23A1EB9600CCD2F7 /* HanZoomPicturesVC */ = {
+			isa = PBXGroup;
+			children = (
+				914251C4228A6F8D0010FD8B /* HanZoomPicturesVC.swift */,
+			);
+			path = HanZoomPicturesVC;
+			sourceTree = "<group>";
+		};
+		913782FD23A1EC0F00CCD2F7 /* HanProgressVC */ = {
+			isa = PBXGroup;
+			children = (
+				914251DA228A96740010FD8B /* HanProgressVC.swift */,
+				914251DB228A96740010FD8B /* HanProgressVC.xib */,
+			);
+			path = HanProgressVC;
+			sourceTree = "<group>";
+		};
+		913782FE23A1EC9600CCD2F7 /* HanMarqueeVC */ = {
+			isa = PBXGroup;
+			children = (
+				910DF8DA22A8B55900835CF3 /* HanMarqueeVC.swift */,
+				910DF8DB22A8B55900835CF3 /* HanMarqueeVC.xib */,
+			);
+			path = HanMarqueeVC;
+			sourceTree = "<group>";
+		};
+		913782FF23A1ED5200CCD2F7 /* HanTipsHUDVC */ = {
+			isa = PBXGroup;
+			children = (
+				911BB57C22C1B9D30090A1F4 /* HanTipsHUDVC.swift */,
+				911BB57D22C1B9D30090A1F4 /* HanTipsHUDVC.xib */,
+			);
+			path = HanTipsHUDVC;
+			sourceTree = "<group>";
+		};
+		9137830023A1ED7400CCD2F7 /* HanNavVC */ = {
+			isa = PBXGroup;
+			children = (
+				9133090E22C352A1000D8B3D /* HanNavVC.swift */,
+			);
+			path = HanNavVC;
+			sourceTree = "<group>";
+		};
+		9137830123A1EFEC00CCD2F7 /* HanEncryptionVC  */ = {
+			isa = PBXGroup;
+			children = (
+				9137830223A1F00500CCD2F7 /* HanEncryptionVC.swift */,
+				9137830323A1F00500CCD2F7 /* HanEncryptionVC.xib */,
+			);
+			path = "HanEncryptionVC ";
+			sourceTree = "<group>";
+		};
 		914251B6228A53E40010FD8B /* Items */ = {
 			isa = PBXGroup;
 			children = (
-				9119E2BC22856D170087653A /* HanImagePickerVC.swift */,
-				9119E2BD22856D170087653A /* HanImagePickerVC.xib */,
-				914251B7228A54870010FD8B /* HanZoomPictureVC.swift */,
-				914251B8228A54870010FD8B /* HanZoomPictureVC.xib */,
-				914251C4228A6F8D0010FD8B /* HanZoomPicturesVC.swift */,
-				914251DA228A96740010FD8B /* HanProgressVC.swift */,
-				914251DB228A96740010FD8B /* HanProgressVC.xib */,
-				910DF8DA22A8B55900835CF3 /* HanMarqueeVC.swift */,
-				910DF8DB22A8B55900835CF3 /* HanMarqueeVC.xib */,
-				911BB57C22C1B9D30090A1F4 /* HanTipsHUDVC.swift */,
-				911BB57D22C1B9D30090A1F4 /* HanTipsHUDVC.xib */,
-				9133090E22C352A1000D8B3D /* HanNavVC.swift */,
+				91E33F3F23AA290800666741 /* HanNetworkVC */,
+				9137830123A1EFEC00CCD2F7 /* HanEncryptionVC  */,
+				9137830023A1ED7400CCD2F7 /* HanNavVC */,
+				913782FF23A1ED5200CCD2F7 /* HanTipsHUDVC */,
+				913782FE23A1EC9600CCD2F7 /* HanMarqueeVC */,
+				913782FD23A1EC0F00CCD2F7 /* HanProgressVC */,
+				913782FC23A1EB9600CCD2F7 /* HanZoomPicturesVC */,
+				913782FB23A1EB5200CCD2F7 /* HanZoomPictureVC */,
+				911AE9DE23A0D4AF0032D961 /* HanImagePickerVC */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -312,6 +392,24 @@
 				914251CD228A70430010FD8B /* 1.png */,
 			);
 			path = HanZoomPictures;
+			sourceTree = "<group>";
+		};
+		91E33F3A23AA287400666741 /* HanNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				91E33F3B23AA287400666741 /* Reachability.swift */,
+				91E33F3C23AA287400666741 /* HanReachability.swift */,
+			);
+			path = HanNetwork;
+			sourceTree = "<group>";
+		};
+		91E33F3F23AA290800666741 /* HanNetworkVC */ = {
+			isa = PBXGroup;
+			children = (
+				91E33F4023AA292F00666741 /* HanNetworkVC.swift */,
+				91E33F4123AA292F00666741 /* HanNetworkVC.xib */,
+			);
+			path = HanNetworkVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +480,7 @@
 				9119E28122851F7A0087653A /* LaunchScreen.storyboard in Resources */,
 				910DF8DD22A8B55900835CF3 /* HanMarqueeVC.xib in Resources */,
 				914251D3228A70430010FD8B /* 3.png in Resources */,
+				91E33F4323AA292F00666741 /* HanNetworkVC.xib in Resources */,
 				9119A6FF228977520062D305 /* placeholder.png in Resources */,
 				914251DD228A96740010FD8B /* HanProgressVC.xib in Resources */,
 				9119E27E22851F7A0087653A /* Assets.xcassets in Resources */,
@@ -392,6 +491,7 @@
 				9119E2BF22856D170087653A /* HanImagePickerVC.xib in Resources */,
 				914251BA228A54870010FD8B /* HanZoomPictureVC.xib in Resources */,
 				9119E27C22851F780087653A /* Main.storyboard in Resources */,
+				9137830523A1F00500CCD2F7 /* HanEncryptionVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +508,10 @@
 				9119A6EF2289546A0062D305 /* HanTools_UIColor.swift in Sources */,
 				914251B9228A54870010FD8B /* HanZoomPictureVC.swift in Sources */,
 				914251C5228A6F8D0010FD8B /* HanZoomPicturesVC.swift in Sources */,
+				91E33F3D23AA287400666741 /* Reachability.swift in Sources */,
 				914251DC228A96740010FD8B /* HanProgressVC.swift in Sources */,
 				9119E2BE22856D170087653A /* HanImagePickerVC.swift in Sources */,
+				9137830423A1F00500CCD2F7 /* HanEncryptionVC.swift in Sources */,
 				914251BE228A6DE30010FD8B /* HanTools_UIImage.swift in Sources */,
 				914251C3228A6F0B0010FD8B /* HanZoomPicturesView.swift in Sources */,
 				9119E2AD228521830087653A /* HanBasicDefine.swift in Sources */,
@@ -426,10 +528,12 @@
 				910DF8DC22A8B55900835CF3 /* HanMarqueeVC.swift in Sources */,
 				9119E2B9228560560087653A /* HanImagePicker.swift in Sources */,
 				914251C1228A6EC30010FD8B /* HanZoomPicturesScrollView.swift in Sources */,
+				91E33F3E23AA287400666741 /* HanReachability.swift in Sources */,
 				9119A6F522896DC50062D305 /* HanTools_String.swift in Sources */,
 				911BB57E22C1B9D30090A1F4 /* HanTipsHUDVC.swift in Sources */,
 				9119A6ED22894ED60062D305 /* HanTools.swift in Sources */,
 				9133090722C34A39000D8B3D /* HanBasicViewController.swift in Sources */,
+				91E33F4223AA292F00666741 /* HanNetworkVC.swift in Sources */,
 				9119A6E82289486B0062D305 /* HanTipsHUD.swift in Sources */,
 				9119A6EA228949A30062D305 /* HanBasicView.swift in Sources */,
 				9133090F22C352A1000D8B3D /* HanNavVC.swift in Sources */,
